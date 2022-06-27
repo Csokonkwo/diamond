@@ -1,0 +1,77 @@
+.order{
+    height: inherit;
+    background-color: rgb(21, 34, 56);
+    padding: 50px 10px 50px 100px;
+    color: white;
+}
+
+.order label{
+    display: inline-block;
+    font-size: 20px;
+    width: 15vw;    
+}
+
+.order input{
+    background-color: rgb(21, 34, 56);
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: white;
+    width: 15vw;
+}
+
+.order select{
+    height: 44px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgb(21, 34, 56);
+    color: white;
+    width: 15vw;
+}
+
+.order button{
+    background: darkred;
+    color: white;
+    height: 47px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid darkred;
+}
+
+@media only screen and (max-width:1000px){
+    
+    .order{
+        padding-left:40px 
+    }
+    
+    .order label{
+        display: block;
+        margin-bottom: 20px;
+        width: unset;
+    }
+    
+    .order input, .order select{
+        width: 22vw;
+    }
+}
+
+@media only screen and (max-width:650px){
+    
+    .order{
+        padding: 50px 8vw 40px 8vw;
+    }
+    
+    .order input{
+        display: block;
+        margin-bottom: 10px;
+        width: 80vw;
+    }
+    
+    .order select{
+        width:82vw;
+        margin-bottom: 10px
+    }
+}

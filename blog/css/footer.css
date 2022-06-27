@@ -1,0 +1,135 @@
+footer{
+    min-height: 180px;
+    padding: 30px 20px 20px 20px;
+}
+
+footer .socials{
+    width: max-content;
+    margin: auto;
+}
+
+footer .socials a{
+    width: 43px;
+    height: 33px;
+    padding-top: 8px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s;
+    color: white;
+}
+
+footer .socials a:hover{
+    color: white;
+    font-size: 1.4em;
+    transition: all 0.3s;
+}
+
+footer form{
+    display: flex;
+}
+
+.news-letter{
+    margin-top: 20px;
+}
+
+.news-letter h4{
+    flex: 1;
+    font-weight: 200;
+    font-family: 'lora', 'dosis', sans-serif;
+    padding: 5px 10px;
+}
+
+.news-letter input{
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.news-letter input:focus{
+    outline: none;
+}
+
+.news-letter button{
+    flex: 1;
+    margin: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    background: white;
+    transition-duration: 1000ms;
+}
+
+.news-letter button:hover{
+    background: #666;
+    color: white;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #666;
+    font-family: 'lora', 'dosis', sans-serif;
+}
+
+#news-response{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    footer form{
+        flex-direction: column;
+    }
+    
+    .news-letter input,
+    .news-letter button{
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    
+    footer .socials a{
+        width: 38px;
+        height: 28px;
+        padding-top: 7px;
+        font-size: 1.1em;
+        margin-right: 2px;
+    }
+}
+
+ #facebook{
+    background: #3B5998;
+     transition: 500ms;
+}
+
+#twitter{
+    background: #55ACEE;
+    transition: 500ms;
+}
+
+#linkedin{
+    background: #0077B5;
+    transition: 500ms;
+}
+
+#whatsapp{
+    background: #25D366;
+    transition: 500ms;
+}
+
+#instagram{
+    background: #5851db;
+    transition: 500ms;
+}
+
+#youtube{
+    background: #e62a2a;
+    transition: 500ms;
+}

@@ -1,0 +1,85 @@
+
+.alert{
+    height: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.alert-danger{
+    background-color: darkred;
+}
+
+.alert-success{
+    background-color: green;
+}
+
+*:focus{
+    border: 2px solid blue;
+    outline: none;
+}
+
+.form-container ::placeholder{
+    color: white
+}
+
+.form-container{
+    max-width: 300px;
+    padding: 10px 20px 10px 20px;
+}
+
+.form-container .text-input{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 13px;
+    border: 0px;
+    border-bottom: 1px solid #daa106;
+    box-sizing: border-box;
+    color: white;
+    background: transparent;
+}
+
+.form-container button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: 0px;
+    transition: 500ms;
+    color: white;
+    background-color:#daa106;
+}
+
+.form-container button:hover{
+    color: white;
+    background: #a39999;
+    transition: 500ms;
+}
+
+.where.profile{
+    margin: 0px 0px 20px 0px;
+}
+
+.where.profile p{
+    padding: 10px 10px;
+    background: white;
+    color: black;
+    line-height: 1.5;
+    border-radius: 5px;
+    display: none;
+}
+
+.where.profile a{
+    display: block;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.where.profile p span{
+    display: block;
+    font-size: 14px;
+}

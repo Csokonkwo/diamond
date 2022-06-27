@@ -1,0 +1,66 @@
+.auth-content{
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.auth-content form div{
+    margin-bottom: 10px;
+}
+
+.auth-content .form-title{
+    text-align: center;
+}
+
+.auth-content form p{
+    text-align: center;
+}
+
+.auth-content form p a{
+    text-decoration: underline;
+}
+
+.btn{
+    font-size: 1.08em;
+    font-family: 'lora', serif;
+}
+
+.msg{
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success{
+    color: green;
+    border: 1px solid green;
+    background-color: lightgreen;
+}
+
+.error{
+    color: darkred;
+    border: 1px solid darkred;
+    background-color: red;
+}
+
+@media only screen and (max-width:934px){
+    .auth-content{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .auth-content{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .auth-content{
+        width: 90%;
+    }
+}

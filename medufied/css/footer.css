@@ -1,0 +1,126 @@
+footer{
+    background-color:rgb(21, 34, 56, 0.7);
+    text-align: center;
+    padding:150px 3% 50px 3%;
+    height:max-content;
+}
+
+.iphone-b{
+    background-image: url(../img/hero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(40%);
+}
+
+.footer{ 
+    width: 100%;
+    display: flex;
+    color: white;
+    text-align: left;
+    padding-bottom: 50px;   
+}
+
+.footer-content{
+    margin-right: 1%;
+    flex-grow: 1;
+}
+
+.footer-content-head{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight:500;
+}
+
+.footer-content-body{
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.news-input{
+    border:1.5px solid green;
+    padding:8.5px;
+    padding-right: 0px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.news-btn{
+    background-color:green;
+    padding:0px 5px;
+    position: absolute;
+    height: 35px;
+    color:white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid green;
+    -webkit-appearance:none;
+            appearance:none;
+}
+
+
+.footer-content ul li{
+    list-style: none;
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content ul li a:active{
+    color: white;
+}
+
+.main-footer{
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: green;
+}
+
+@media only screen and (max-width:635px){
+    
+    footer{
+        padding:10px 4% 50px 4%;
+    }
+    
+    .footer{
+        flex-direction: column;
+    }
+    .footer-content{
+        margin-top: 30px;
+        flex-grow: 1;
+    }
+    .main-footer{
+        font-size: 18px;
+        border-top: 2px solid white;
+        padding-top: 20px;
+    }
+    
+    footer img{
+        height: 16px;
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    .main-footer{
+        font-size: 16px;
+    }
+    
+}

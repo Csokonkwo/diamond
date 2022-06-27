@@ -1,0 +1,174 @@
+.abou{
+    background: white;
+}
+
+.abou .container{
+    display: flex;
+    padding: 15px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.abou .container .box{
+    flex: 1;
+    margin: 10px
+}
+
+.abou .container .box h2{
+    width: max-content;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.abou .container .box h2::after{
+    content: "";
+    position: absolute;
+    background-color: #205AAC;
+    width: 40%;
+    height: 4px;
+    bottom: -9px;
+    left: 0px;
+}
+
+.abou .container .box .content i{
+    padding: 10px;
+    border: 1px solid #205AAC;
+    border-radius: 50%;
+    color: #205AAC;
+    margin-right: 10px;
+}
+
+.abou .container .box h4{
+    margin: 10px 0px;
+}
+
+.secu{
+    box-shadow: 0px 0px 0px 1000px rgb(4, 4, 39, 0.9) inset;
+    background-image: url(../img/genimage1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secu .container{
+    padding: 50px 15px;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.secu .container p{
+    line-height: 2;
+}
+
+.comp{
+    background-color: #f2f2f2;
+    padding: 20px 0px;
+    padding: 50px 15px;
+}
+
+.comp .container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.comp .container .box{
+    margin: 20px;
+    flex: 1;
+}
+
+.comp .container .box .content{
+    background: white;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.comp h2{
+    margin: 20px auto;
+    max-width: 1250px;
+    text-align: center;
+}
+
+
+
+.partners{
+    padding: 10px;
+}
+
+.partners h2{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.partners .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.partners .container .box{
+    display: inline-block;
+    margin: 10px;
+}
+
+.partners .container .box img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px){
+    .abou .container{
+        flex-direction: column;
+    }
+    
+    .abou .container .box{
+        margin: 10px 0px;
+    }
+
+    .abou .container .box h4{
+        font-size: 1.1em;
+    }
+
+    .abou .container .box p{
+        font-size: .9em;
+    }
+    
+    .comp .container{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .comp .container .box{
+        margin: 0px 0px;
+    }
+
+    .comp .container .box h4{
+        font-size: 1.2em;
+    }
+
+    .comp h2{
+        font-size: 1.6em;
+    }
+
+    .comp .container .box p{
+        font-size: .9em;
+    }
+
+    .secu h3{
+        font-size: 1.5em;
+    }
+
+    .secu .container p{
+        font-size: .9em;
+    }
+
+    .partners .container .box{
+        display: inline-block;
+        margin: 10px;
+        max-width: 80px;
+    }
+
+
+}

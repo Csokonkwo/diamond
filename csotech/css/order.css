@@ -1,0 +1,95 @@
+.order{
+    height: inherit;
+    background-color: #012038;
+    padding: 90px 10px 90px 100px;
+    color: white;
+}
+
+.order ::placeholder{
+    color: black;
+}
+
+.order label{
+    display: inline-block;
+    font-size: 20px;
+    width: 15vw;    
+}
+
+.order input{
+    background-color: white;
+    height: 41px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: black;
+    width: 15vw;
+}
+
+.order input:focus{
+    background: lightgreen;
+}
+
+.order select{
+    height: 44px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    width: 15vw;
+}
+
+.order button{
+    background: green;
+    color: white;
+    height: 47px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.order input[type=text], .order input[type=email]{
+    padding: 10px;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+
+#order-response{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1000px){
+    
+    .order{
+        padding-left:40px 
+    }
+    
+    .order label{
+        display: block;
+        margin-bottom: 20px;
+        width: unset;
+    }
+    
+    .order input, .order select{
+        width: 22vw;
+    }
+}
+
+@media only screen and (max-width:650px){
+    
+    .order{
+        padding: 70px 8vw 60px 8vw;
+    }
+    
+    .order input{
+        display: block;
+        margin-bottom: 10px;
+        width: 80vw;
+    }
+    
+    .order select{
+        width:80vw;
+        margin-bottom: 10px
+    }
+}

@@ -1,0 +1,255 @@
+.pages{
+    width: ;
+    height: inherit;
+    background-color: white;
+    color: rgb(21, 34, 56);
+    padding: 20px 40px;
+}
+
+.pages a{
+     color: rgb(21, 34, 56);
+}
+
+.pages-head{
+    color: rgb(21, 34, 56);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.pages-box-2 img{
+    filter: brightness(70%)
+}
+
+.pages-container{
+    margin-top: 15px;
+    display: grid; 
+    grid-template-columns: 24% 24% 24% 24%; 
+    grid-gap: 10px;
+    grid-template-rows: 100px, 100px, 100px 100px;
+}
+
+.pages-box{
+    grid-column: 1;
+    grid-row:1;
+    background: white;
+    border: 1px solid gray;
+}
+
+.pages-box-2{
+    grid-column: 2;
+    grid-row:1;
+    background: white;
+    border: 1px solid gray;
+}
+
+.pages-box-3{
+    grid-column: 3;
+    grid-row:1;
+    background: white;
+    border: 1px solid gray;
+}
+
+.pages-box-4{
+    grid-column: 4;
+    grid-row:1;
+    background: white;
+    border: 1px solid gray;
+}
+
+.pages-box-5{
+    grid-column: 1;
+    grid-row:2;
+    background: white;
+    border: 1px solid gray;
+}
+
+.pages-box-6{
+    grid-column: 2;
+    grid-row:2;
+    background: white;
+    border: 1px solid gray;
+}
+
+.pages img{
+    height: 300px;
+    width: 100%;
+}
+
+.pages-content{
+    margin: 15px;
+    font-weight: bold;
+    color: rgb(21, 34, 56);
+}
+
+@media only screen and (max-width:1080px){
+    
+    .pages-container{
+        margin-top: 15px;
+        display: grid; 
+        grid-template-columns: 33% 33% 33%; 
+        grid-gap: 10px;
+        grid-template-rows: 100px, 100px 100px;
+    }
+
+    .pages-box-4{
+        grid-column: 1;
+        grid-row:2;
+    }
+
+    .pages-box-5{
+        grid-column: 2;
+        grid-row:2;
+        background: white;
+        border: 1px solid gray;
+    }
+
+    .pages-box-6{
+        grid-column: 3;
+        grid-row:2;
+        background: white;
+        border: 1px solid gray;
+    }
+    
+}
+
+@media only screen and (max-width:750px){
+    
+    .pages-container{
+        margin-top: 15px;
+        display: grid; 
+        grid-template-columns: 49% 49%; 
+        grid-gap: 10px;
+        grid-template-rows: 100px, 100px;
+    }
+    
+    .pages-box-3{
+        grid-column: 1;
+        grid-row:2;
+    }
+
+    .pages-box-4{
+        grid-column: 2;
+        grid-row:2;
+    }
+
+    .pages-box-5{
+        grid-column: 1;
+        grid-row:3;
+        background: white;
+        border: 1px solid gray;
+    }
+
+    .pages-box-6{
+        grid-column: 2;
+        grid-row:3;
+        background: white;
+        border: 1px solid gray;
+    }
+    
+}
+
+@media only screen and (max-width:550px){
+    
+    .pages img{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:420px){
+    
+    .pages{
+        padding: 20px 20px;
+    }
+
+    .pages-head{
+        font-size: 22px;
+    }
+
+    .pages-container{
+        margin-top: 10px;
+        grid-template-columns:10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ; 
+        grid-auto-rows: 50px;
+    }
+
+    .pages-box{
+        grid-column: 1/4;
+        grid-row:1;
+        border: 1px solid gray;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .pages-box-2{
+        grid-column: 4/8;
+        grid-row:1;
+        border: 1px solid gray;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .pages-box-3{
+        grid-column: 1/4;
+        grid-row:2;
+        background: white;
+        border: 1px solid gray;
+         border-radius: 50px;
+        text-align: center;
+    }
+
+    .pages-box-4{
+        grid-column: 4/9;
+        grid-row:2;
+        background: white;
+        border: 1px solid gray;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .pages-box-5{
+        grid-column: 1/5;
+        grid-row:3;
+        background: white;
+        border: 1px solid gray;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .pages-box-6{
+        grid-column: 5/9;
+        grid-row:3;
+        background: white;
+        border: 1px solid gray;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .pages img{
+        height: 300px;
+        width: 100%;
+    }
+
+    .pages-content{
+        margin: 15px;
+        font-weight: bold;
+        color: rgb(21, 34, 56);
+    }
+
+}
+
+@media only screen and (max-width:373px){
+    
+    .pages-box-2{
+        grid-column: 4/9;
+    }
+    .pages-box-4{
+        grid-column: 4/8;
+    }
+}
+
+@media only screen and (max-width:373px){
+    
+    .pages-container{
+        font-size: 14px;
+    }
+}

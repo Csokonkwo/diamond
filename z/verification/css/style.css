@@ -1,0 +1,249 @@
+body{
+    margin:0;
+    padding:0;
+    height:95%;
+    position:absolute;
+    width:100%;
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(10,100,255,0.9);
+}
+
+@font-face {
+    font-family: 'Billabong';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Billabong'), url('Billabong.woff') format('woff');
+}
+
+.container{
+    width: 100%;
+    max-width: 450px;
+    margin: 0px auto;
+    border: 1px solid gray;
+}
+
+#effect{
+    height: 35px;
+    background-image:-moz-linear-gradient( to right,deeppink,orange);
+    background-image:linear-gradient( to right,deeppink,orange);
+    color:white;
+    font-family:sans-serif;
+    margin-bottom:30px;
+    padding: 10px 15px;
+}
+
+#effect span{
+    float:left;
+    color:white;
+    font-size:13px;
+    font-family:sans-serif;
+    font-weight:bold;
+}
+
+#effect p{
+    margin: 2px 0px 0px 0px;
+    font-weight: normal;
+}
+
+#effect #get{
+    width:50px;
+    height:30px;
+    float:right;
+    font-family:sans-serif;
+    background-color:transparent;
+    color:white;
+    border: 1.9px solid white;
+    text-align:center;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.header{
+    font-family: Billabong;
+    text-align:center;
+    font-size:60px;
+    font-weight:100; 
+}
+
+#lang{
+    text-align:center;
+    font-weight:bold;
+    font-size:12px;
+    font-family:sans-serif;
+    letter-spacing: 0.5px;
+    width:100%;
+    margin:0;
+    margin-bottom:40px;
+    color:rgb(0,0,0,0.6);
+}
+
+h2{
+    font-weight:100;
+    font-size:15px;
+    font-family:sans-serif;
+    text-align:center;
+    color:rgb(0,0,0,0.6);
+    padding: 0px 20px
+}
+
+#fblink{
+    text-decoration:none;
+    color:white;
+}
+
+#info1{
+    font-size:10px;
+    font-style:italic;
+    text-align:center;
+}
+
+button, .facebook{
+    background-color:rgb(10,100,255,0.9);
+    width:80%;
+    height:30px;
+    border:none;
+    padding: 0px 30px;
+    margin-bottom:20px; 
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+button:focus{
+    outline: none;
+}
+
+#or{
+    text-align:center;
+    color:rgb(0,0,0, 0.6);
+    margin: 15px;
+    font-weight: bold;
+    font-size: .8em;
+    position: relative;
+}
+
+#or::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30%;
+    display: block;
+    border-bottom: 1px solid rgb(0,0,0, 0.3);
+    left: 35px;
+    bottom: 7px;
+}
+
+#or::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30%;
+    display: block;
+    border-bottom: 1px solid rgb(0,0,0, 0.3);
+    right: 35px;
+    bottom: 7px;
+}
+
+#signuplink{
+    text-align:center;
+    text-decoration:none; 
+    margin: 20px 0px 40px 0px;
+    color: rgb(0, 52, 227);
+}
+
+#google{
+    width:130px;
+    height:40px;
+}
+
+form{
+    margin: 20px auto 0px auto;
+    display: block;
+    width: 80%;
+}
+
+form input{
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px 0px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    width: 100%;
+    display: block;
+}
+
+form a{
+    display: block;
+    margin: 20px 0px;
+    float: right;
+    font-size: .9em
+}
+
+form p{
+    color: rgb(0, 0, 0, 0.8);
+    font-size: .8em;
+    text-align: center;
+}
+
+form p a{
+    display: inline;
+    float: none;
+    font-size: 1em;
+}
+
+.facebook{
+    margin: 10px auto;
+    text-align: center;
+    font-weight: normal;
+    padding:8px;
+    font-size: .9em;
+    height: inherit;
+    width: calc(80% - 16px);
+}
+
+.facebook i{
+    background: white;
+    color: rgb(10,100,255,0.9);
+    padding: 2px 2px 0px 7px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.footer{
+    color:rgb(0,0,0,0.6);
+    margin:50px 0px 0px 0px;
+    text-align:center;
+    font-size:13px;
+    font-family:sans-serif;
+    padding:10px;
+    letter-spacing: 1px;
+
+}
+
+.footer p{
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-weight:20px;
+    margin-top:10px;
+    margin-bottom:20px;
+    color:rgb(0,0,0);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 450px){
+    .container{
+        border: none;
+    }
+}

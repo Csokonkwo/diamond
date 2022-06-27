@@ -1,0 +1,150 @@
+.operation{
+    padding: 0px 10px;
+}
+
+.operation h3{
+    padding: 0px 20px;
+    color: green;
+    font-size: 1.1em;
+}
+
+.operation h3 span{
+    float: right;
+    font-weight: normal;
+}
+
+.operation .container{
+    display: flex;
+}
+
+.operation .container .box{
+    flex: 1;
+}
+
+.operation .container .box img{
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.operation .container .box p{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: .9em;
+    color: #103a9a;
+    color: green;
+}
+
+.transaction{
+    margin: 30px 25px 0px 25px ;
+}
+
+.transaction h3{
+    padding: 0px 0px;
+    color: green;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.transaction .container{
+    display: flex;
+    border-bottom: 1px solid #e0dfdf;
+    color: gray;
+}
+
+.transaction .container:last-of-type{
+    border-bottom: 0px solid gray;
+    margin-bottom: 20px;
+}
+
+.transaction .container img{
+    width: 40px;
+    height: 40px;
+    margin: 10px 15px 10px 0px;
+}
+
+.transaction .container .box{
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.transaction .container .box h4{
+    margin: 10px 0px;
+    float: left;
+}
+
+.transaction .container .box h3{
+    margin: 10px 0px;
+    padding: 0px;
+    float: right;
+}
+
+.transaction .container .box small{
+    position: absolute;
+    bottom: 15px;
+    left: 0px
+}
+
+.transaction .container .box i{
+    position: absolute;
+    bottom: 13px;
+    right: 0px;
+    font-size: .8em;
+}
+
+.form{
+    width: 90%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.form h3{
+    text-align: center;
+}
+
+.form input, .form select{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form input, .form select:focus{
+    outline: none;
+}
+
+.form button{
+    display: block;
+    padding: 10px 25px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 1px solid lightgreen;
+    background: lightgreen;
+    transition: 500ms;
+}
+
+.form button:hover{
+    background: white;
+    border: 1px solid lightgreen;
+}
+
+
+
+@media only screen and (max-width:450px){
+    
+    .operation h3{
+        font-size: 1em;
+    }
+    
+    .operation .container .box img{
+        width: 35px;
+    }
+
+    .operation .container .box p{
+        font-size: .8em;
+    }
+}

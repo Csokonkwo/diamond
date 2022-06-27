@@ -1,0 +1,56 @@
+CREATE TABLE users(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(100) NOT NULL,
+    email varchar(150) NOT NULL UNIQUE,
+    password varchar(255) NOT NULL,
+    admin int(1) NOT NULL,
+    firstname varchar(100),
+    lastname varchar(100),
+    gender varchar(10),
+    phone varchar(30),
+    country varchar(35),
+    referrer_id int(11) NOT NULL,
+    wallet_id varchar(200),
+    token varchar(455) NOT NULL,
+    verified tinyint NOT NULL,
+    ban tinyint,
+    image varchar(200),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE site_info(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    keyAccess text NOT NULL,
+    keyValue text NOT NULL
+);
+
+CREATE TABLE topics(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    description text,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE posts(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(11) NOT NULL,
+    topic_id int(11),
+    title varchar(100) NOT NULL,
+    sub_title varchar(100),
+    image varchar(100) NOT NULL,
+    image_two varchar(100),
+    body text,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE comments(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(250) NOT NULL,
+    email varchar(250) NOT NULL,
+    post_id int(11),
+    comment text,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);

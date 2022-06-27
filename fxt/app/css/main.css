@@ -1,0 +1,182 @@
+main{
+    width: calc(80% - 40px);
+    float: right;
+    margin-top: 70px;
+    padding: 20px 20px;
+}
+
+.scroll{
+    overflow-x: scroll;
+}
+
+.main-top{
+    padding: 20px 0px;
+}
+
+.main-top p{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-top .right{
+    float: right;
+}
+
+.main-top .bal{
+    float: left;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.main-top .cash{
+    float: right;
+    font-size: 15px;
+}
+
+.main-top span{
+    display: block;
+    text-align: center;
+}
+
+
+.dashboard-middle{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.dashboard-middle .left{
+    flex: 3;
+    padding: 40px 20px;
+    background: #2b3138;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: max-content;
+}
+
+.dashboard-middle .left a{
+    display: block;
+    margin: 20px auto;
+    width: max-content;
+    padding: 10px 20px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    color: skyblue;
+    font-size: 15px;
+}
+
+.dashboard-middle .left img{
+    display: block;
+    margin: auto;
+}
+
+.dashboard-middle .right{
+    flex: 7;
+    line-height: 1.5;
+    padding: 0px 0px 20px 0px;
+    background: #002203;
+    border-radius: 5px;
+}
+
+.dashboard-middle .right p{
+    padding: 15px;
+    border-top: 1px solid black;
+    margin: 0px 5px 0px 5px;
+}
+
+.dashboard-middle .right p:first-child{
+    margin: 0px 0px 15px 0px;
+    border-top: 1px solid black;
+    background: #daa106;
+    border-top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+
+.dashboard-middle .right p span{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.profile{
+    max-width: 800px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.dashboard-middle.profile a{
+    margin: 20px;
+    background: #daa106;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+th, tr{
+    color: white
+}
+
+#where p img{
+    height: 350px;
+    width: 300px;
+}
+
+#expecteda{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width:1000px){
+    main{
+        width: calc(75% - 40px);
+    }
+}
+
+@media only screen and (max-width:750px){
+    main{
+        width: calc(100% - 20px);
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    
+    .main-top{
+        padding: 0px 0px;
+    }
+    
+    .main-top p{
+        font-size: 18px;
+    }
+
+    .main-top .bal{
+        font-size: 12px;
+    }
+
+    .main-top .cash{
+        font-size: 12px;
+    }
+    
+    .dashboard-middle{
+        flex-direction: column;
+    }
+    
+    .dashboard-middle .left{
+        margin: 0px auto 10px auto;
+        padding: 10px 50px 10px 50px;
+    }
+    
+    .dashboard-middle .left img{
+        width: 120px;
+    }
+
+    .dashboard-middle .left a{
+        margin: 10px auto;
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+}

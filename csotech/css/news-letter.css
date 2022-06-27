@@ -1,0 +1,86 @@
+.news-letter input::placeholder{
+        color: gray;
+        opacity: 1;
+    }
+
+.news-letter{
+    display: block;
+    height: inherit;
+    background-color: #012038;
+    padding: 20px 10px 50px 50px;
+    color: white;
+}
+
+.news-letter label{
+    display: inline-block;
+    font-size: 20px;
+    width: 300px; 
+    margin-right: 20px;
+}
+
+.news-letter input{
+    background-color: white;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: black;
+    width: 35vw;
+}
+
+.news-letter button{
+    background:green;
+    color: white;
+    height: 47px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#news-response{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1000px){
+    
+    .news-letter{
+        padding-left:25px 
+    }
+    
+    .news-letter input{
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width:750px){
+    
+    .new-letter{
+        padding: 30px 8vw 40px 8vw;
+    }
+    
+    .news-letter label{
+        display: block;
+        width: 82vw;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .news-letter input{
+        display: block;
+        margin-bottom: 10px;
+        width: 80vw;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-letter button{
+        display: block;
+        width: 83vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

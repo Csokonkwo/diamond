@@ -1,0 +1,140 @@
+.cause{
+    height: inherit;
+    padding: 9vw;
+    color: black;
+}
+
+.cause-head-container{
+    display: flex;
+}
+
+.cause-head{
+    font-size: 28px;
+    width: 30vw;
+}
+
+.cause-sub-head{
+    width: 50vw;
+    line-height: 1.5;
+}
+
+.cause-highlight{
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cause-container{
+    display: grid;
+    grid-template-columns: 26vw 26vw 26vw;
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+    grid-row-gap: 4vw;
+    margin-top: 30px;
+}
+
+.cause-box{
+    height: 400px;
+    box-shadow: -6px 8px 8px -2px gray;
+}
+
+.cab-1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.cab-2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.cab-3{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.cause-top{
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+}
+
+.img1{
+    background-image: url(../img/cause.jpg);
+}
+
+.img2{
+    background-image: url(../img/cause2.jpg);
+}
+
+.img3{
+    background-image: url(../img/cause1.jpg);
+}
+
+.cause-bottom{
+    font-size: 20px;
+    padding: 10px
+}
+
+
+@media only screen and (max-width:700px){
+    
+    .cause-head-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cause-head{
+        font-size: 28px;
+        width: 80vw;
+    }
+
+    .cause-sub-head{
+        width: 80vw;
+        line-height: 2.0;
+        margin-top: 20px;
+    }
+
+    .cause-container{
+        grid-template-columns: 70vw;
+        grid-row-gap: 4vw;
+        justify-content: center;
+    }
+
+    .cause-box{
+        height: 400px;
+        box-shadow: -6px 8px 6px -5px gray;
+    }
+
+    .cab-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cab-2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .cab-3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .cause-top{
+        background-position: top;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    
+    .cause-container{
+        grid-template-columns: 85vw;
+        grid-row-gap: 4vw;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    
+}

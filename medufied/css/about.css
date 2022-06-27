@@ -1,0 +1,424 @@
+.about{
+    background-color: white;
+    margin: 0px;
+    display: block;
+    height: inherit;
+    position: relative;
+    width:100%;
+    padding-bottom: 30px;
+}
+
+.about-header{
+    height: 85px;
+    background-color: rgb(21, 34, 56);
+    width: 100%;
+}
+
+.about-image{
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(80%);
+    width: 100%;
+    height: 800px;
+    margin-top:0px ;
+    position: relative;
+}
+
+.about-head{
+    position: absolute;
+    margin-top: 280px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.about-head span{
+    font-size: 20px;
+}
+
+.about-left{
+    margin:25px 0px;
+    width: 100%;
+}
+
+.about-content{
+    font-size: 23px;
+    margin: 10px auto 10px 2%;
+    text-align: justify;
+}
+
+
+/*--------- Meet section ---------*/
+
+.meet{
+    background-color: #bebebe;
+    margin: 0px;
+    display: block;
+    height: inherit;
+    position: relative;
+    width:100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.meet-head{
+    width: 100%;
+    text-align: center;
+    color: rgb(21, 34, 56);
+    font-size: 25px;
+}
+
+.meet-sub-head{
+    width: 100%;
+    text-align: center;
+    color: rgb(21, 34, 56);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.meet-container{
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    grid-template-rows: 30px, 30px, 30px, 30px, 30px;
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.meet-container img{
+    height: 16vw;
+    width: 16vw;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.meet-box-content-head{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.meet-box{
+    background: white;
+    border: 1px solid white;
+    height: 350px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.b-1{
+    grid-column: 1;
+    grid-row:1;
+}
+.b-2{
+    grid-column: 2;
+    grid-row:1;
+}
+.b-3{
+    grid-column: 3;
+    grid-row:1;
+}
+.b-4{
+    grid-column: 4;
+    grid-row:1;
+}
+.b-5{
+    grid-column: 5;
+    grid-row:1;
+}
+.b-6{
+    grid-column: 1;
+    grid-row:2;
+}
+.b-7{
+    grid-column: 2;
+    grid-row:2;
+}
+.b-8{
+    grid-column: 3;
+    grid-row:2;
+}
+.b-9{
+    grid-column: 4;
+    grid-row:2;
+}
+.b-10{
+    grid-column: 5;
+    grid-row:2;
+}
+
+@media only screen and (max-width:1100px){
+    
+    .meet-container{
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: 30px, 30px, 30px, 30px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .meet-container img{
+        height: 20vw;
+        width: 20vw;
+    }
+    .meet-box{
+        height: 320px;
+    }
+    .b-1{
+        grid-column: 1;
+        grid-row:1;
+    }   
+    .b-2{
+        grid-column: 2;
+        grid-row:1;
+    }
+    .b-3{
+        grid-column: 3;
+        grid-row:1;
+    }
+    .b-4{
+        grid-column: 4;
+        grid-row:1;
+    }
+    .b-5{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .b-6{
+        grid-column: 2;
+        grid-row:2;
+    }
+    .b-7{
+        grid-column: 3;
+        grid-row:2;
+    }
+    .b-8{
+        grid-column: 4;
+        grid-row:2;
+    }
+    .b-9{
+        grid-column: 2;
+        grid-row:3;
+    }
+    .b-10{
+        grid-column: 3;
+        grid-row:3;
+    }
+}
+
+
+@media only screen and (max-width:860px){
+    
+    .about{
+        background-color: white;
+        margin: 0px;
+        display: block;
+        height: inherit;
+        position: relative;
+        z-index: -20;
+    }
+    
+    .about-image{
+        filter: brightness(80%);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-left{
+        margin-top: 20px;
+    }
+    
+    .about-content{
+        font-size: 23px;
+        margin: 10px 20px;
+    }
+    
+}
+
+@media only screen and (max-width:800px){
+    
+    .meet-container{
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .meet-container img{
+        height: 25vw;
+        width: 25vw;
+    }
+    .meet-box{
+        height: 48vw;
+    }
+    .b-1{
+        grid-column: 1;
+        grid-row:1;
+    }   
+    .b-2{
+        grid-column: 2;
+        grid-row:1;
+    }
+    .b-3{
+        grid-column: 3;
+        grid-row:1;
+    }
+    .b-4{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .b-5{
+        grid-column: 2;
+        grid-row:2;
+    }
+    .b-6{
+        grid-column: 3;
+        grid-row:2;
+    }
+    .b-7{
+        grid-column: 1;
+        grid-row:3;
+    }
+    .b-8{
+        grid-column: 2;
+        grid-row:3;
+    }
+    .b-9{
+        grid-column: 3;
+        grid-row:3;
+    }
+    .b-10{
+        grid-column: 2;
+        grid-row:4;
+    }
+}
+
+@media only screen and (max-width:660px){
+    
+    .meet-container{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .meet-container img{
+        height: 35vw;
+        width: 35vw;
+    }
+    .meet-box{
+        height:60vw;
+    }
+    .b-1{
+        grid-column: 1;
+        grid-row:1;
+    }   
+    .b-2{
+        grid-column: 2;
+        grid-row:1;
+    }
+    .b-3{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .b-4{
+        grid-column: 2;
+        grid-row:2;
+    }
+    .b-5{
+        grid-column: 1;
+        grid-row:3;
+    }
+    .b-6{
+        grid-column: 2;
+        grid-row:3;
+    }
+    .b-7{
+        grid-column: 1;
+        grid-row:4;
+    }
+    .b-8{
+        grid-column: 2;
+        grid-row:4;
+    }
+    .b-9{
+        grid-column: 1;
+        grid-row:5;
+    }
+    .b-10{
+        grid-column: 2;
+        grid-row:5;
+    }
+}
+
+@media only screen and (max-width:450px){
+    
+    .meet-head{
+        font-size: 7vw;
+    }
+
+    .meet-sub-head{
+        font-size: 4vw;
+    }
+    
+    .meet-container{
+        display: grid;
+        grid-template-columns: 85%;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-left: 10%;
+        padding-right: 5px;
+    }
+    .meet-container img{
+        height: 45vw;
+        width: 45vw;
+    }
+    .meet-box{
+        height:80vw;
+    }
+    .b-1{
+        grid-column: 1;
+        grid-row:1;
+    }   
+    .b-2{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .b-3{
+        grid-column: 1;
+        grid-row:3;
+    }
+    .b-4{
+        grid-column: 1;
+        grid-row:4;
+    }
+    .b-5{
+        grid-column: 1;
+        grid-row:5;
+    }
+    .b-6{
+        grid-column: 1;
+        grid-row:6;
+    }
+    .b-7{
+        grid-column: 1;
+        grid-row:7;
+    }
+    .b-8{
+        grid-column: 1;
+        grid-row:8;
+    }
+    .b-9{
+        grid-column: 1;
+        grid-row:9;
+    }
+    .b-10{
+        grid-column: 1;
+        grid-row:10;
+    }
+}

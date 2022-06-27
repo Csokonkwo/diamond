@@ -1,0 +1,46 @@
+[26-May-2022 08:03:29 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:38:06 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:38:17 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:43:58 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:44:17 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:44:32 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:44:32 UTC] PHP Notice:  Undefined index: referrer_id in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 28
+[17-Jun-2022 20:45:27 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:45:32 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:46:07 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[17-Jun-2022 20:46:37 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[18-Jun-2022 02:32:01 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[20-Jun-2022 08:42:08 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[21-Jun-2022 16:14:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[22-Jun-2022 13:33:15 UTC] PHP Notice:  Undefined index: admin in /home/coinmmeo/diamondassetsventures.com/app/header.php on line 45
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[24-Jun-2022 02:30:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[24-Jun-2022 14:57:06 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 48
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 52
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 56
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Undefined variable: shares_tran in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60
+[25-Jun-2022 00:15:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/coinmmeo/diamondassetsventures.com/app/referrals.php on line 60

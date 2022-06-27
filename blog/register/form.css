@@ -1,0 +1,110 @@
+.alert{
+    height: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.alert-danger{
+    color: darkred;
+    background-color: white;
+}
+
+*:focus{
+    outline: none;
+}
+
+.member{
+    display: flex;
+    padding: 20px 0px;
+    background-color: white;
+    list-style: none;
+}
+
+.member .form{
+    flex: 1;
+    margin: 10px;
+}
+
+.member .image{
+    flex: 1;
+    margin: 10px;
+    background-image: url(register.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.member .form .container{
+    width: 96%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.member .form h2{
+    margin: 20px 0px;
+}
+
+.member .form input{
+    display: block;
+    width: 100%;
+    margin: 20px auto 10px auto;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+    box-sizing: border-box;
+    color: green;
+}
+
+.member .form select{
+    display: block;
+    width: 100%;
+    margin: 20px auto 10px auto;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+    box-sizing: border-box;
+    color: green;
+}
+
+.member .form button{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid green;
+    transition: 500ms;
+    box-sizing: border-box;
+    color: white;
+    background-color:green;
+}
+
+.member .form button:hover{
+    color: green;
+    background: white;
+    transition: 500ms;
+}
+
+.member .form .container p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width:650px){
+    
+    .member{
+        flex-direction: column;
+    }
+
+    .member .image{
+        margin-top: 20px;
+    }
+
+    
+}

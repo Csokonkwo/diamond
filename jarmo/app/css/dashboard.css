@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html, 
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'lora', 'dosis', sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header{
+    background: #0a385f;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 150;
+}
+
+ header p{
+    margin: 0px;
+}
+
+header p img{
+    width: 60px;
+    float: right;
+    margin-top: -10px;
+}
+
+header .balance{
+    text-align: center;
+}
+
+aside{
+    background: #03335f;
+    width: 30%;
+    position: fixed;
+    height: calc(100% - 70px);
+    top: 70px;
+}
+
+aside ul{
+   list-style: none;
+    padding: 0px;
+}
+
+aside ul li a{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    color: white;
+    transition: 500ms;
+}
+
+aside ul li a:hover{
+    padding-left: 25px;
+}
+
+
+main{
+    width: 70%;
+    float: right;
+    padding: 0px 15px;
+    position: relative;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+main .operations{
+    max-width: 400px;
+    display: block;
+}
+
+main .operations ul{
+    padding: 0px;
+    width: max-content;
+    margin: auto;
+}
+
+main .operations li{
+    list-style: none;
+    float: left;
+    line-height: 2;
+    margin: 0px 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+main .operations li:first-of-type{
+    margin-left: 0px;
+}
+
+main .operations li:last-of-type{
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+main .operations img{
+    width: 55px;
+    padding: 10px;
+    background: #d7e8f5;
+    border-radius: 20px;
+    display: block;
+}
+
+main .transactions{
+    margin: 20px 0px;
+    border-top: 1px solid #d6d5d5;
+    max-width: 400px;
+}
+
+main .transactions p i{
+    font-size: .9em;
+}
+
+main .transactions p span{
+    float: right;
+}
+
+main .transactions .container{
+    display: flex;
+    height: 50px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+main .transactions .container img{
+    width: 50px;
+    margin-right: 10px;
+    background: #d7e8f5;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+main .transactions .container p{
+    margin:0px;
+}
+
+main .transactions .container p small{
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    color: #edbd65;
+}
+
+main .transactions .container p span{
+    position: absolute;
+    top: 5px;
+    right: 20px
+}
+
+.operations.bottom{
+    position: fixed;
+    bottom: 5px;
+}
+
+.operations.bottom ul{
+    background: #edf4f8;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.operations.bottom li{
+    margin: 0px 27px;
+}
+
+.operations.bottom img{
+    background: white;
+    width: 40px;
+}
+
+
+@media only screen and (max-width:580px){
+    
+    header{
+        height: 168px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background: #0f5c9d;
+    }
+    
+    
+    @keyframes spin{
+        0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    header .balance{
+        text-align: center;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background: white;
+        padding: 30px 0px;
+        margin: 18px auto;
+        border: 2px solid #e2dede;
+        position: relative;
+        color: green;
+    }
+    
+    header .balance::before{
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        background: white;
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        border-top: 2px solid green;
+        z-index: -1;
+        animation: spin 5s linear infinite; 
+    }
+    
+    
+    aside{
+        display: none;
+    }
+    
+    main{
+        width: 100%;
+        float: none;
+        padding-top: 163px;
+    }
+}

@@ -1,0 +1,355 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+  
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder{
+    color: white;
+}
+
+::-ms-input-placeholder{
+    color: white;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    background-color: white;
+}
+
+/*-------- body contact ------*/
+
+.body-contact{
+    position: fixed;
+    z-index: 300;
+    top: 150px;
+    left: 0px;
+}
+
+.hide-body-contact{
+    
+}
+
+.con-bar{
+    position: absolute;
+    top:-30px;
+    left: 0px;
+    width: 17px;
+    background-color: darkred;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+}
+
+.con-bar span{
+    display: block;
+    width: 5px;
+    background-color: white;
+    height: 6px;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+#con{
+    position: absolute;
+    left: 0px;
+    transition: 0.8s;
+    margin-top: 10px;
+}
+
+#con.show{
+    left: -50px;
+    transition: 0.8s;
+}
+
+/*------- Contact icons -----*/
+.foo {
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-right: 0px;
+    display: block;
+    width: 20px;
+}
+
+.fa-facebook {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.fa-twitter {
+    color: white;
+    text-align: center;
+}
+
+.fa-instagram{
+    color: white;
+    text-align: center;
+}
+
+.fa-whatsapp {
+    color: white;
+    text-align: center;
+}
+
+
+/*--- body contact ends-----*/
+
+header{
+    position: fixed;
+    z-index: 200;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: darkred;
+    color: white;
+    height: 90px;
+    transition:2s;
+    width: 100%;
+}
+
+.logo{
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#navbar{
+    background-color: transparent;
+    margin-right: 0px;
+    padding: 5px 0px;
+    margin-top: 20px;
+    position: fixed;
+    right: 10px;
+    z-index: 200;
+    top: 10px;
+}
+
+#navbar ul{
+    background-color:transparent;
+    padding: 8px;
+}
+
+#navbar ul li{
+    display: inline;
+    padding: 11px;
+    list-style: none;
+    font-size: 16px;
+    position: relative;
+    color: white;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#navbar ul a:hover {
+    color:white;
+}
+
+#navbar ul a:active {
+    color: white;
+}
+
+#navbar ul a::before {
+    content: "";
+    background-color: white;
+    display: block;
+    height: 5px;
+    width: 80%;
+    position: absolute;
+    top: -8px;
+    left: 1px;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+    border-radius: 10px;
+}
+
+#navbar ul a:hover::before{
+    transform: scale(1,1);
+}
+
+.li-phone{
+    margin-left: 60px;
+    float: right;
+    margin-top: -10px
+}
+
+.sticky{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 90px;
+}
+
+/*-------------- Responsive ---------------*/
+
+
+@media only screen and (max-width:800px){
+    header{
+        height: 80px;   
+    }
+    
+    .sticky{
+        height: 80px;
+    }
+    
+    .logo{
+        margin-left:0px;
+        margin-top: 12px;
+    }
+    
+    #navbar .li-phone{
+        display: none;
+    }
+    
+    .res-bar{
+        position: absolute;
+        right: 16px;
+        top: 23px;
+    }
+
+    .res-bar span{
+        display: block;
+        width: 35px;
+        background-color: black;
+        height: 3px;
+        margin: 6px 0px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    
+    #activo1.activo1{
+        width: 17px;
+        margin-left:17px;
+        transition: 0.5s;
+    }
+    
+    #navbar{
+        background-color: white;
+        width: 90%;
+        top: 60px;
+        left: 5%;
+        padding-top: 0px;
+        z-index: 50;
+        position: absolute;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+    
+    #navbar.active{
+        transform: scale(1,1);
+        position: fixed;
+    }
+    
+    #navbar ul{
+        margin-top: 0px;
+        padding: 5px 8px 0px; 8px;
+    }
+    
+    #navbar ul li{
+        display: block;
+        font-size: 13px;
+        font-weight: normal; 
+        color:black;
+        padding: 3px 2px;
+    }
+    
+    #navli{
+        opacity: 0;
+        transition: 150ms ease-in-out;
+    }
+    
+    #navli.navli{
+        opacity: 1;
+        transition: 250ms ease-in-out 250ms;
+    }
+    
+    #navbar ul li a{
+        color: black;
+    }
+    
+    #navbar ul li a:hover{
+        color: darkred;
+    }
+    
+    #navbar ul a::before {
+        content: "";
+        background-color: darkred;
+        display: block;
+        height: 4px;
+        width: 70%;
+        position: absolute;
+        top: -4px;
+        left: 0px;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+        border-radius: 20px;
+    }
+
+    #navbar ul a:hover::before{
+        transform: scale(1,1);
+    }
+    
+    .sticky #navbar ul li a{
+        color: black;
+    }
+    
+    .sticky span{
+        color: black;
+    }
+    
+}
+
+@media only screen and (max-width:485px){
+    
+     .logo{
+       font-size: 20px;
+         padding-left: 0px;
+    }
+    
+    .res-bar span{
+        width: 30px;
+    }
+    
+    .res-bar{
+        right: 10px;
+    }
+    
+    #activo1.activo1{
+        width: 16px;
+        margin-left:14px;
+        transition: 0.5s;
+    }
+
+}

@@ -1,0 +1,71 @@
+.news-letter{
+    height: inherit;
+    background-color: green;
+    padding: 50px 10px 50px 50px;
+    color: white;
+}
+
+.news-letter label{
+    display: inline-block;
+    font-size: 20px;
+    width: 300px; 
+    margin-right: 20px;
+}
+
+.news-letter input{
+    background-color: rgb(21, 34, 56);
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: white;
+    width: 35vw;
+}
+
+.news-letter button{
+    background: yellow;
+    color: white;
+    height: 47px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+}
+
+@media only screen and (max-width:1000px){
+    
+    .news-letter{
+        padding-left:25px 
+    }
+    
+    .news-letter input{
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width:750px){
+    
+    .new-letter{
+        padding: 50px 8vw 40px 8vw;
+    }
+    
+    .news-letter label{
+        display: block;
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+    
+    .news-letter input{
+        display: block;
+        margin-bottom: 10px;
+        width: 80vw;
+        background-color: white;
+    }
+    .news-letter button{
+        width: 82vw;
+    }
+    .news-letter input::placeholder{
+        color: gray;
+        opacity: 1;
+    }
+}

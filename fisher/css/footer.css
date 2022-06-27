@@ -1,0 +1,124 @@
+footer{
+    padding: 90px 50px 20px 50px;
+    background: green;
+    color: white;
+    line-height: 2;
+}
+
+.footer-container{
+    display: flex;
+}
+
+footer h2{
+    width: max-content;
+    border-bottom: 3px solid yellow;
+    margin: 0px;
+}
+
+.footer-logo{
+    flex: 3;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.footer-news{
+    flex: 7;
+}
+
+.text-input{
+    padding: 15px 20px;
+    border: none;
+}
+
+.btnn{
+    background: yellow;
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: max-content;
+    margin: 20px 0px;
+    color: black;
+    font-weight: bold;
+    transition: 1000ms;
+}
+
+.footer-quick{
+    flex: 1
+}
+
+.footer-services{
+    flex: 1
+}
+
+.footer-contact{
+    flex: 1
+}
+
+footer ul{
+    padding: 10px 20px;
+}
+
+.main-footer{
+    flex: 1;
+    padding-top: 30px;
+    border: 1px solid green;
+}
+
+.main-footer p{
+    float: left;
+}
+
+.main-footer span{
+    display: block;
+    float: right;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1100px){
+    .footer-logo{
+        flex: 4
+    }
+    
+    .footer-news{
+        flex: 6
+    }
+}
+
+@media only screen and (max-width:850px){
+    .footer-logo{
+        flex: 5
+    }
+    
+    .footer-news{
+        flex: 5
+    }
+}
+
+@media only screen and (max-width:780px){
+    .text-input{
+        padding: 15px 10px;
+    }
+    .btnn{
+        padding: 15px 20px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .footer-container{
+        flex-direction: column;
+    }
+    
+    footer p{
+        width: 90%;
+        max-width: 400px
+    }
+    
+    .main-footer span{
+        float: none;
+    }
+}
+
+@media only screen and (max-width:450px){
+    footer{
+        padding: 50px 10px 20px 20px;
+    }
+}

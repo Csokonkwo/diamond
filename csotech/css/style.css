@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin:0;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+    scroll-behavior: smooth; 
+}
+
+body{
+    margin: auto;
+    padding: 0px;
+    font-family: sans-serif;
+    width:100%;
+    overflow:hidden;
+    background-color: #012038;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+   font-family: 'candal', serif;
+    color: black;
+    margin: 5px;
+}
+
+header ::-webkit-scrollbar{
+    display: none;
+}
+
+#nav-bar{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+header{
+    width:100%;
+    z-index: 100;
+    color:white;
+    position:absolute;
+    transition:0.4s;
+    padding: 10px 0px;
+    background-color:transparent;
+    font-family:'Roboto Condensed';
+}
+
+header .logo{
+    padding:10px;
+    padding-top: 15px;
+    font-weight: bold; 
+    font-size: 30px;
+    margin-left: 10px;
+    color: #005600;;
+    float:left;
+}
+
+header .logo img{
+    height: 30px
+}
+
+#nav-bar{
+    background-color: transparent;
+    padding: px;
+    margin-top: 0px;
+    float:right;
+    margin-right: 10px;
+    margin-top: 9px;
+} 
+
+#sub-nav{
+    display: none;
+}
+
+header a{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.sticky{
+    position:fixed;
+    background-color:white;
+    box-shadow: 0px 1px 5px 1px gray;
+    z-index: 8888;
+    padding: 0px 0px;
+}
+
+.sticky nav ul li a{
+    color:black;
+}
+
+.sticky .logo{
+    margin-top: 0px;
+}
+
+header ul li{
+    padding: 10px; 
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s;
+    float: left;
+    list-style: none;
+}
+
+header ul li a{
+    transition: 0.3s;
+    position: relative;
+    width: inherit;
+}
+
+header ul li a:hover{ 
+    color:#005600;; 
+    transition: 0.3s;
+    color: lightgreen;
+}
+
+header ul li ul {
+    display: none;
+    width: max-content;
+    transition: 5000ms;
+}
+
+header ul li:hover ul{
+    display: block;
+    transition: 5000ms;
+}
+
+header ul li ul li{
+    display: block;
+    float: none;
+    
+}
+
+header ul li ul li a{
+    text-transform:none;
+}
+
+
+#nav-bar ul li i{
+    display: none;
+}
+
+/*------------ Hamburger bar --------------*/
+
+@media only screen and (max-width: 1000px){
+    
+    header a{
+        font-size: .8em
+    }
+}
+
+@media only screen and (max-width:790px){
+    
+    #nav-bar ul li i{
+        display: inline;
+    }
+    
+    header .logo{
+        margin-left: 100px;
+        transition: 100ms;
+        margin-top: -10px;
+    }
+    
+    .sticky .menu-btn span{
+        background-color:black;
+        
+    }
+    
+    .menu-btn{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        text-align: center;
+    }
+
+    .menu-btn span{
+        display: block;
+        width: 26px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+    
+    .menu-btn span:first-child{
+        width: 35px;
+    }
+    
+    .menu-btn span:last-child{
+        width: 18px;
+    }
+    
+    .sticky #menu-btn span{
+        background-color: green;
+        transition:0.5s;
+        width: 30px;
+    }
+    
+    .sticky #menu-btn span:first-child {
+        width: 14px;
+        margin-left: 1px;
+    }
+    
+    .sticky #menu-btn span:last-child{
+        width: 14px;
+        margin-left: 16px;
+    }
+    
+    .sticky nav ul li a{
+        color:green;
+    }
+    
+    /*------------- hamburger bar end ---------*/
+    
+    #nav-bar{
+        position: fixed;
+        background-color: white;
+        width: 70%;
+        height: 100%;
+        left: -750px;
+        top: 0;
+        transition: all 400ms linear;
+        display: block;
+        margin-top:0px;
+        padding: 0px;
+        z-index: 120;
+        box-shadow: 1px 0px 5px 3px rgb(0,0,0,0.3);
+        overflow-x: scroll;
+    }
+    
+    #sub-nav{
+        display: block;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        box-shadow: 0px 6px 5px -5px rgb(0,0,0,0.3) inset;
+        position: relative;
+    }
+    
+    #sub-nav img{
+        height: 25px;
+        margin-left: 15px;
+    }
+
+    #sub-menu-btn{
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 15px;
+        font-size: 1.9em;
+        background-color: white;
+        padding: 20px 11px;
+        border-radius: 50%;
+        z-index: 888;
+    }  
+
+    #sub-menu-btn span{
+        display: block;
+        width: 25px;
+        background-color: green;
+        height: 4px;
+        margin: 0px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+    
+    #sub-menu-btn span:first-child{
+        transform: rotate(45deg)
+    }
+    #sub-menu-btn span:last-child{
+        margin-top: -4px;
+        transform: rotate(-45deg)
+    }
+
+    header ul{
+        margin-top: 5px;
+    }
+    
+    header ul li{
+        display: block;
+        font-size: 15px;
+        font-weight: normal;
+        padding: 0px;
+        margin: 0px;
+        float: none;
+    }
+    
+    header ul li a{
+        color: green;
+        display: inline-block;
+        width: 75%;
+        padding: 15px;
+        padding-left: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        font-size: 1.1em;
+    }
+    
+    header ul li a:hover {
+        background: lightgreen;
+        padding-left: 20px;
+        color: green;
+    }
+    
+    header ul a::before {
+        display: none;
+    }
+    
+    #nav-bar.active{
+        left: 0px;
+        
+    }
+    
+    header ul li ul{
+        margin-left: 10px;
+    }
+     
+    header ul li ul li a{
+        padding-left: 25px;
+        
+    }
+
+    header ul li ul li a:hover{
+        background: transparent;
+        padding-left: 30px;
+        
+    }
+
+    
+}
+
+@media only screen and (max-width:750px){
+    
+    
+    body{
+        background-size:auto;
+    }
+    
+}
+
+@media only screen and (max-width:450px){
+    
+    .menu-btn span{
+        width: 30px;
+    }
+
+    #nav-bar{
+        width: 80%;
+    }
+    
+    
+}
+
+@media only screen and (max-width:340px){
+    
+    header ul li a{
+        font-size: .9em;
+    }
+    
+}
+
+
+
+
+
+/*---------- animaation ---------------*/
+
+.btn{
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-big{
+    color: white;
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.text-input{
+    padding: .7rem 1rem ;
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    color: green;
+    line-height: 1.5rem;
+    font-family: 'lora', serif;
+    font-size: 1.2em;
+}
+
+
+.gradient{
+    background-image: linear-gradient(to right, green, #C7EA46, #149414);
+    box-sizing: border-box;
+    position: relative;
+    background-size: 450px;
+}
+
+.gradient:hover{
+    animation: gradient-animate 8s linear infinite;
+}
+
+@keyframes gradient-animate{
+    0%{
+    background-position:0%;
+}
+    
+    100%{
+    background-position:400%;
+    }
+}
+
+.gradient::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(to right, green, #C7EA46, #149414);
+    border-radius: 25px;
+    background-size: 600px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.gradient:hover::before{
+    opacity: 1;
+    filter: blur(20px);
+    animation: gradient-animate 8s linear infinite;
+}

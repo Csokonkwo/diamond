@@ -1,0 +1,102 @@
+CREATE TABLE users(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(100) NOT NULL,
+    email varchar(150) NOT NULL UNIQUE,
+    password varchar(255) NOT NULL,
+    admin int(1) NOT NULL,
+    firstname varchar(100),
+    lastname varchar(100),
+    gender varchar(10),
+    phone varchar(30),
+    country varchar(35),
+    referrer_id int(11) NOT NULL,
+    wallet_id varchar(200),
+    token varchar(455) NOT NULL,
+    verified tinyint NOT NULL,
+    ban tinyint,
+    settings tinyint,
+    image varchar(200),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE transactions(
+    id int(12) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(11) NOT NULL,
+    amount double NOT NULL,
+    type varchar(25) NOT NULL,
+    status varchar(25) NOT NULL,
+    reference varchar(255),
+    payment_method varchar(25),
+    other_ref varchar(25),
+    num_pay varchar(5),
+    num_day varchar(5),
+    modified_at text,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE interests(
+    id int(15) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(11) NOT NULL,
+    amount double NOT NULL,
+    type varchar(25) NOT NULL,
+    status varchar(25) NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+
+CREATE TABLE site_info(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    keyAccess text NOT NULL,
+    keyValue text NOT NULL
+);
+
+CREATE TABLE topics(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    description text,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE posts(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(11) NOT NULL,
+    topic_id int(11),
+    title varchar(100) NOT NULL,
+    sub_title varchar(150),
+    image varchar(150) NOT NULL,
+    image_two varchar(150),
+    body text,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE comments(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(250) NOT NULL,
+    email varchar(250) NOT NULL,
+    post_id int(11),
+    comment text,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE verify(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(12) NOT NULL,
+    image varchar(105),
+    status varchar(25) NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE testimonials(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(255) NOT NULL,
+    body text NOT NULL,
+    fullname varchar(100) NOT NULL,
+    city varchar(100) NOT NULL,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);

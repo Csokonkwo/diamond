@@ -1,0 +1,71 @@
+.choose{
+    background: #040f2a;
+    color: white;
+    height: inherit;
+    position: relative;
+}
+
+.choose-head{
+    padding: 25px 25px 10px 25px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.choose-head::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    background: white;
+    height: 5px;
+    border-radius: 10px;
+    bottom: 2px;
+    animation-name: movinghead;
+    animation-iteration-count: infinite;
+    animation-duration: 10s
+}
+
+.choose-content{
+    height: 350px;
+    display: flex;
+}
+
+.choose-section{
+    flex: 1;
+    padding: 25px;
+}
+
+.choose .choose-content h1,
+.choose .choose-content h2{
+    color: white;
+}
+
+.choose-sub-head{
+    font-size: 25px;
+}
+
+@keyframes movinghead{
+    
+    0%{ width: 50px;}
+    30%{background: yellow;}
+    50%{width: 110px; background: green;}
+    100%{width: 50px; background: white;}
+    
+}
+
+
+
+@media only screen and (max-width:810px){
+    .choose{
+        height: auto;
+        position: relative;
+    }
+
+    .choose .choose-content{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+ 
+}

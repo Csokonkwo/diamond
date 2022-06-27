@@ -1,0 +1,108 @@
+.portfolio{
+    height: inherit;
+    background: darkred;
+    padding-top: 20px;
+}
+
+.portfolio-head{
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-gap: 2vw;
+    grid-auto-columns: 4.5vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 4.5 ;
+    grid-auto-rows: auto;
+    padding: 2vw;
+}
+
+.portfolio-box{
+    height: 250px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.pb-1{
+    background-image: url(../img/hero.jpeg);
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.pb-2{
+    background-image: url(../img/hero1.jpeg);
+    grid-column: 3/7;
+    grid-row: 1;
+}
+
+.pb-3{
+    background-image: url(../img/hero2.jpeg);
+    grid-column: 7/9;
+    grid-row: 1;
+}
+
+.pb-4{
+    background-image: url(../img/hero3.jpeg);
+    grid-column: 1/5;
+    grid-row: 2;
+}
+
+.pb-5{
+    background-image: url(../img/hero4.jpeg);
+    grid-column: 5/9;
+    grid-row: 2;
+}
+
+.portfolio-content{
+    background-color: #fb9101;
+    position: absolute;
+    border-radius: 20px;
+    padding: 3px 10px;
+    bottom: 20px;
+    left: 3vw
+}
+
+@media only screen and (max-width:650px){
+    
+    .portfolio-container{
+        grid-gap: 4vw;
+        grid-auto-columns: 90vw ;
+        grid-auto-rows: auto;
+        padding: 2vw;
+        justify-content: center;
+    }
+
+    .portfolio-box{
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px
+    }
+
+    .pb-1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .pb-2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .pb-3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .pb-4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .pb-5{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+}

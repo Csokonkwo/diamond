@@ -1,0 +1,148 @@
+.section{
+    padding: 80px 50px;
+}
+
+.center{
+    margin: auto;
+    width: max-content;
+}
+
+.section .btn{
+    margin-left: 0px;
+    padding: 20px 40px;
+}
+
+.section .btn:hover{
+    color: black;
+}
+
+.section .container{
+    display: flex;
+}
+
+.section .box{
+    position: relative;
+    flex: 5;
+    height: 350px;
+    margin: 10px;
+}
+
+.section .box .image{
+    background-image: url(../img/hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 25px 10px 0px 30px;
+    width: 300px;
+    position: relative;
+}
+
+.section .box .beh{
+    background: yellow;
+    height: 100%; 
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.section .box .image::before{
+    content: "";
+    background: green;
+    height: 30%; 
+    width: 30px;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    right: -20px;
+    border-radius: 5px;
+}
+
+.section .box div{
+    height: 80%;
+}
+
+.about{
+    padding-top: 20px;
+}
+
+.about-box{
+    flex: 1;
+}
+
+.about-image{
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.about-content{
+    margin-left: 10px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.about-content h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width:780px){
+    
+    .section{
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (max-width:680px){
+    
+    .section{
+        padding-right: 10px;
+    }
+    
+    .section .container{
+        flex-direction: column;
+    }
+    
+    .center{
+        margin: 20px auto;
+        width: inherit;
+        height: 70%;
+        width: 100%;
+    }
+    
+    .section .box{
+        height: 380px;
+        width: 90vw;
+    }
+    
+    .box-2{
+        max-height: 290px;
+    }
+    
+    .section .box .image{
+        margin-top: 20px;
+        width: 80%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .section p{
+        width: 90%;
+    }
+    
+    .about p{
+        width: 98%;
+    }
+    
+    .about-image{
+        min-height: 400px;
+    }
+    
+    .about-content{
+        margin-left: 0px;
+    }
+}

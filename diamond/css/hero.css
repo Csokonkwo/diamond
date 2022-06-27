@@ -1,0 +1,184 @@
+.hero {
+  width: 100%;
+  height: 80vh;
+}
+#carouselHero {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hero .carousel-inner {
+  height: 100%;
+  padding: 0;
+}
+.hero .carousel-inner .carousel-item {
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  margin: 0;
+}
+.hero .carousel-inner .carousel-item img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+}
+.hero .carousel-inner .carousel-item .item-cover {
+  width: 300px;
+  height: max-content;
+  margin-left: 10%;
+  margin-top: 6%;
+  position: relative;
+  padding: 10px;
+}
+.hero .carousel-inner .carousel-item .item-cover h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 45px;
+}
+
+.hero .carousel-inner .carousel-item .item-cover h3 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 2;
+}
+.hero .carousel-inner .carousel-item .item-cover a {
+  font-size: 18px;
+  background-color: #0082bb;
+  color: white;
+  padding: 15px 20px 15px 20px;
+}
+.hero a i.fa {
+  color: white;
+}
+.hero .hero-text {
+  color: white;
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-size: 68px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: -25px;
+  line-height: 1.3;
+  font-family: inherit;
+}
+.hero .hero-text .main-text {
+  animation: none;
+}
+.hero .hero-text .hero-text-sub {
+  font-size: 19px;
+  line-height: 2.2;
+  font-weight: 300;
+  animation: none;
+}
+.hero i.fa {
+  font-size: 18px;
+}
+.carousel-indicators {
+  width: 100%;
+  margin: 0;
+}
+.carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+}
+.carousel-indicators li.active {
+  height: 20px;
+  width: 20px;
+  background-color: lightgreen;
+  border-radius: 50px;
+  line-height: inherit;
+  padding: inherit;
+  margin: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+}
+
+.carousel-inner .active .main-text,
+.carousel-inner .carousel-item-next.carousel-item-left .main-text,
+.carousel-inner .carousel-item-prev.carousel-item-right .main-text {
+  animation: 0.8s fadeInUp linear;
+}
+
+.carousel-inner .active .hero-text-sub,
+.carousel-inner .carousel-item-next.carousel-item-left .hero-text-sub,
+.carousel-inner .carousel-item-prev.carousel-item-right .hero-text-sub {
+  animation: 1s fadeInUp linear;
+}
+@keyframes slideFade {
+  from {
+  }
+  to {
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    height: 95vh;
+  }
+  .hero .carousel-inner .carousel-item .item-cover {
+    background: rgba(0,91,130,0.6);
+    width: 100vw;
+    margin: 0; 
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: absolute;
+    bottom: 0;
+    height:70%;
+  }
+  .hero .carousel-inner .carousel-item .item-cover h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+  .hero .carousel-inner .carousel-item .item-cover a {
+    width: 90%;
+    display: block;
+    position: static;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 420px){
+
+  .hero {
+    height: 65vh;
+  }
+
+  .hero .carousel-inner .carousel-item .item-cover h1 {
+    font-size: 18px;
+  }
+
+  .hero .carousel-inner .carousel-item .item-cover h3 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero .carousel-inner .carousel-item .item-cover a {
+    width: 80%;
+  }
+
+  .hero .carousel-inner .carousel-item .item-cover a {
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .hero .carousel-inner .carousel-item .item-cover {
+    padding-top: 30px;
+  }
+
+}

@@ -1,0 +1,215 @@
+.about{
+    padding: 40px 20px 70px 20px;
+}
+
+.about .container .right[data-scroll="in"]{
+    animation-name:fadeInRight;
+    animation-duration:2s;
+    animation-iteration-count:1;
+}
+
+.about .container .left[data-scroll="in"]{
+    animation-name:fadeInLeft;
+    animation-duration:2s;
+    animation-iteration-count: 1;
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .container .left{
+    flex: 1;
+    text-align: center;
+    padding: 0px 20px 0px 0px;
+    text-align: center;
+}
+
+.about .container .right{
+    flex: 1;
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}
+
+.about .container .left a{
+    display: block;
+    width: max-content;
+    color: white;
+    background: #ffc107;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 20px auto;
+    transition: 500ms;
+    animation: headShake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.about .container .left a:hover{
+    color: #ffc107;
+    background: white;
+    border: 1px solid #ffc107;
+}
+
+@media only screen and (max-width:700px){
+    
+    .about{
+        padding: 10px;
+    }
+    
+    .about .container{
+        flex-direction: column;
+    }
+    
+    .about .container .left{
+        padding: 0px;
+    }
+}
+
+
+
+.services{
+    background-image: url(../img/hero_1.jpg);
+    background-position: top;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 400px;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.services .container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.services .box{
+    margin: 10px;
+    flex: 1;
+    max-width: 400px;
+    background: rgb(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+    margin: 10px auto;
+}
+
+.services .box h3{
+    margin: 0px
+}
+
+
+.offer{
+    min-height: 400px;
+    color: black;
+    padding: 30px 13px;
+    background: white;
+}
+
+.offer .container{
+    justify-content: center;
+}
+
+.offer .box{
+    background: white;
+    box-shadow: 0px 2px 20px 5px #d6dee0;
+}
+
+.offer .box img{
+    width: 170px;
+    height: 170px;
+}
+
+.features .box img{
+    width: 100%;
+    height: 250px;
+}
+
+@media only screen and (max-width: 700px){
+    .services .container{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+.buybitcoin{
+    min-height: 200px;
+    background-color: #0a385f;
+    color: white;
+    text-align: center;
+}
+
+.buybitcoin .container{
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.buybitcoin p{
+    font-size: 25px;
+}
+
+.buybitcoin span{
+    font-size: 20px;
+    display: block;
+}
+
+.buybitcoin a{
+    color: lightblue;
+}
+
+
+.stats{
+    padding: 30px 0px 30px 0px;
+}
+
+.stats h1{
+    width: 95vw;
+    max-width: 1250px;
+    margin: 20px auto;
+    font-size: 1.9em;
+    color: #0a385f;
+    text-align: center;
+}
+
+.stats .container{
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.stats .box{
+    flex: 1;
+    margin: 0px 20px;
+}
+
+.stats h4{
+    text-align: center;
+}
+
+@media only screen and (max-width:800px){
+    
+    .stats{
+        padding: 10px 0px 0px 0px;
+    }
+    
+    .stats .container{
+        flex-direction: column;
+    }
+
+    .stats .box{
+        margin: 20px;
+    }
+}
+
+

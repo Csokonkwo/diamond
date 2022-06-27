@@ -1,0 +1,96 @@
+<?php 
+
+include(ROOT_PATH . "/blog/control/database/dbFunctions.php");
+include(ROOT_PATH . "/blog/control/server/validateTopic.php");
+
+$table = 'topics';
+
+$errors = array();
+$id = '';
+$name = '';
+$description = '';
+
+$topics = selectAll($table);
+
+$goTopicIndex = '/blog/admin/topics/index.php';
+
+if(isset($_POST['add_topic'])){
+    $errors = validateTopic($_POST);
+
+    if(count($errors)===0){
+       
+        unset($_POST['add_topic']);
+        $topic_id = createUser($table, $_POST);
+        $_SESSION['message'] = 'Topic created successfully';
+        $_SESSION['type'] = 'success';
+        header('location: '. BASE_URL . $goTopicIndex);
+        exit();
+    }
+
+    else{    
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+    }
+}
+
+//gets and auto fill topic edit form
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+    $topic = selectOne($table, ['id' => $id]);
+    $id = $topic['id'];
+    $name = $topic['name'];
+    $description = $topic['description'];
+}
+
+if(isset($_GET['del_id'])){
+    $id = $_GET['del_id'];
+    $count = delete($table, $id);
+    $_SESSION['message'] = 'Topic deleted successfully';
+    $_SESSION['type'] = 'success';
+    header('location: '. BASE_URL .$goTopicIndex);
+    exit();
+}
+
+
+if(isset($_POST['update_topic'])){
+    $errors = validateTopic($_POST);
+
+    if(count($errors)===0){
+        $id = $_POST['id'];
+        unset($_POST['id'], $_POST['update_topic']);
+        $topic_id = update($table, $id, $_POST);
+        $_SESSION['message'] = 'Topic updated successfully';
+        $_SESSION['type'] = 'success';
+        header('location: '. BASE_URL . $goTopicIndex);
+        exit();
+    }
+    else{
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+    }
+}
+
+
+//This section displays all topics on main page
+
+$posts = array();
+$postsTitle = 'Recent posts';
+
+
+if(isset($_GET['t_id'])){
+    $posts = getPostsByTopic($_GET['t_id']);
+    $postsTitle = "Posts on ". $_GET['name']; 
+}
+else if(isset($_POST['search_term'])){
+    $postsTitle = "Results for: ". $_POST['search_term']; 
+    $posts = searchPosts($_POST['search_term']);
+} 
+else{
+    $posts = getPublishedPosts();
+}
+
+
+$trendings = array();
+$trendings = getTrending();
+

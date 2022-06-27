@@ -1,0 +1,120 @@
+footer *{
+    color: white; 
+}
+
+footer{
+    background: #1b4a40;
+    color: white;
+    line-height: 1.5;
+    background-image: url(../img/hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 400px;
+}
+
+.footer-top{
+    width: 95vw;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.footer-top .container{
+    padding: 40px 0px 40px 0px;
+    width: 95vw;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+}
+
+.footer-top p:first-child{
+    flex: 1;
+}
+
+.footer-top p:last-child{
+    flex: 1;
+}
+
+.footer-top p:last-child span{
+    display: block;
+    margin-left: 20px;
+    font-size: .8em;
+}
+
+
+.footer-middle{
+    width: 95vw;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.footer-middle .container{
+    display: flex;
+}
+
+.footer-middle .box{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.footer-middle .box h2{
+    margin: 40px 0px 20px 0px;
+}
+
+.footer-middle .box ul{
+    list-style: none;
+}
+
+.footer-middle .box ul a{
+    display: block;
+    max-width: calc(100% - 20px);
+    padding: 10px 0px 10px 20px;
+    transition: 500ms;
+}
+
+.footer-middle .box ul a:hover{
+    padding: 10px 0px 10px 40px;
+    max-width: calc(100% - 40px);
+    color: #daa106;
+}
+
+.footer-bottom{
+    width: 95vw;
+    max-width: 1250px;
+    margin:20px auto;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid gray;
+}
+
+.footer-bottom p{
+    text-align: center;
+}
+
+@media only screen and (max-width:930px){
+
+    .footer-top{width: 90vw;}
+    .footer-middle{width: 90vw;}
+    .footer-bottom{width: 90vw;}
+    
+    .footer-top .container{
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .footer-top p{
+        margin: 10px 0px;
+    }
+    
+    .footer-middle .container{
+        flex-direction: column;
+    }
+    
+    .footer-middle .container ul{
+        padding-left: 0px;
+    }
+    
+    .footer-middle .container p{
+        width: 95%;
+    }
+}

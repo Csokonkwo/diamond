@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html, 
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'lora', 'dosis', sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.table{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.table::-webkit-scrollbar{
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td{
+    height: 45px;
+    border-bottom: 1px solid #acaaaa;
+    text-align: left;
+    padding: 5px;
+    color: black;
+}
+
+td{ text-transform: capitalize ;}
+
+tr:nth-child(even){background-color: #c7e5ff; color: black;}
+
+th{background-color:#0a385f; color: white; height: 50px}
+
+header{
+    background: black;
+    padding: 20px 100px;
+    color: white;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky{
+    position: fixed;
+    top: 0px;
+    background: rgb(0, 0, 0, 0.9);
+}
+
+header img{
+    width: 130px;
+    margin: -10px;
+    height: 70px;
+}
+
+header ul{
+    padding: 0px 20px;
+    float: right
+}
+
+header ul li{
+    list-style: none;
+    float: left;
+    padding: 0px 10px;
+}
+
+header ul li a{
+    color: #ffc107;
+    transition: 500ms;
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+aside{
+    background: #ffc107;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 80px;
+    font-family: 'roboto condensed';
+    z-index: 100;
+}
+
+aside ul{
+    padding: 0px;
+    margin: 0px auto;
+    height: inherit;
+    width: max-content;
+    
+}
+
+aside ul li{
+    list-style: none;
+    float: left;
+    height: 100%;
+}
+
+aside ul li a{
+    display: block;
+    height: 100%;
+    padding: 20px 30px;
+    color: white;
+    transition: 500ms;
+}
+
+aside ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.u-header{
+    height: 80px;
+}
+
+.sub-nav{
+    display: none;
+}
+
+@media only screen and (max-width:900px){
+    
+    header{
+        font-size: .8em;
+        padding: 20px 80px;
+    }
+    
+    aside{
+        font-size: .8em;
+    }
+    
+    aside ul li a{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:750px){
+    
+    .u-header{
+        height: 0px;
+    }
+    
+    header .menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    
+    header .menu-btn span{
+        display: block;
+        width: 30px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+    
+    header{
+        padding: 20px;
+        font-size: .6em
+    }
+    
+    header ul{
+        margin-right: 20px;
+    }
+    
+    header .register{
+        display: none;
+    }
+
+    header img{
+        width: 120px;
+        height: 60px;
+    }
+    
+    aside{
+        font-size: .9em;
+        position: fixed;
+        top: 0px;
+        left: -800px;
+        width: 75%;
+        min-height: 100%;
+        background-image: url(../img/hero_6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 500ms;
+    }
+
+    .showing{
+        left: 0px;
+        z-index: 200;
+    }
+    
+    aside ul{
+        width: inherit;
+        margin: 0px;
+        display: block;
+    }
+    
+    aside ul li{
+        float: none;
+        display: block;
+        height: 50px;
+    }
+    
+    aside ul li a{
+        color: white;
+        font-weight:bolder;
+        transition: 500ms;
+        display: block;
+        border-top: 1px solid rgb(250, 250, 250, 0.1);
+        padding: 10px 20px;
+    }
+    
+    aside ul li a:hover{
+        color: white;
+        padding-left: 30px;
+    }
+    
+    .sub-nav{
+        display: block;
+        padding: 7px;
+    }
+    
+    .sub-nav ul{
+        float: right;
+    }
+    
+    .sub-nav li{
+        list-style: none;
+        float: left;
+    }
+    
+    .sub-nav li a{
+        border-top: none;
+    }
+}
+
+@media only screen and (max-width:340px){
+    
+    header{
+        font-size: .5em;
+        padding: 10px;
+    }
+}
+
+.goog-te-gadget {
+    font-size: 0px !important;
+    margin-top: -10px;
+} 
+
+.goog-te-gadget select{
+    padding: 5px;
+    margin: 0px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(250, 250, 250, 0.1);
+    color: white;
+    transition: 500ms;
+    background: transparent;
+}
+
+.goog-te-gadget select:focus{
+    outline: none;
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.goog-te-gadget a{
+    display: none;
+}

@@ -1,0 +1,113 @@
+.alert{
+    height: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.alert-danger{
+    background-color: #e50000;
+}
+
+.form{
+    width: 100%;
+    font-family: sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.form * {
+    color: #040129;
+}
+
+.form li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+*:focus{
+    outline: none;
+}
+
+.form .container{
+    border-radius: 5px;
+    padding: 0px 0px 20px 0px;
+    margin: auto;
+    background: white;
+    flex: 1;
+    margin: 20px;
+}
+
+.form .container form{
+    max-width: 400px;
+    margin: auto;
+}
+
+.form .container input, .form .container select{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px 15px 15px 30px;
+    font-size: 15px;
+    border: 0px;
+    border-bottom: 1px solid #6c757d;
+    box-sizing: border-box;
+    color: #040129;
+}
+
+.form .btn{
+    width: 100%;
+    margin: 30px 0px 20px 0px;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 500ms;
+    color:#0a385f;
+    background-color:white;
+    border: 1px solid #0a385f;
+    font-weight: normal;
+}
+
+.form .btn:hover{
+    color: #0a385f;
+    border: 1px solid white;
+    background: #edbd65;
+}
+
+.form .container div{
+    position: relative;
+}
+
+.form .container i{
+    position: absolute;
+    top: 13px;
+    left: 5px;
+}
+
+.form .container p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form .right{
+    background-image: url(register.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    margin: 20px;
+    min-height: 300px;
+}
+
+@media only screen and (max-width:650px){
+    
+    .form {
+        flex-direction: column;
+    }
+    
+    .form .right{
+        margin-top: 0px;
+    }
+}

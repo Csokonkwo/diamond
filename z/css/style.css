@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html, 
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Source Sans Pro, 'lora', 'dosis', sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+th, td{
+    height: 40px;
+    border-bottom: 1px solid #acaaaa;
+    text-align: left;
+    padding: 5px;
+    color: black;
+}
+
+tr:nth-child(even){background-color: #c19740; color: black;}
+
+th{background-color:#04223b; color: white;}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header{
+    padding: 0px;
+    margin: 0px;
+}
+
+.over-header{
+    background: #606467;
+    padding: 15px 50px;
+    color: white;
+}
+
+.over-header p{
+    margin: 0px;
+}
+
+.over-header span{
+    float: right;
+}
+
+.middle-header{
+    padding: 13px 40px 0px 40px;
+}
+
+.middle-header .container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 0px;
+}
+
+.middle-header .container .box{
+    flex: 1;
+    margin: 0px 10px;
+}
+
+.middle-header img{
+    width: 160px;
+}
+
+.middle-header .container .box .box-cont{
+    display: flex;
+}
+
+.middle-header .container .box .box-cont img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.middle-header .container .box .box-cont p{
+    margin: 0px;
+    font-size: .9em;
+}
+
+.middle-header .container .box .box-cont p span{
+    display: block
+}
+
+header ul{
+    list-style: none;
+    margin: auto;
+    /*background: #d4a44b;*/
+    padding: 8px 40px;
+    width: 100%;
+    background: #f5f5f5;;
+    transition: 500ms;
+    height: 57px;
+}
+
+ul.sticky{
+    position: fixed;
+    width:100vw;
+    margin:0;
+    top:0;
+    left:0;
+    z-index: 200;
+    transition: 500ms;
+}
+
+header ul li{
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 10px 20px;
+    transition: 500ms;
+    color: black;
+    border-right: 1px solid rgb(250,250,250, 0.2);
+}
+
+header ul li a:hover{
+    padding: 10px 30px;
+    color: #c19740;
+}
+
+header .fa-plus{display: none;}
+
+header ul li ul{
+    top: 42px;
+    left: -5px;
+    padding: 5px;
+    background: #459045;
+    position: absolute;
+    z-index: 500;
+    height: max-content;
+    width: max-content;
+    display: none;
+    transition: 500ms;
+}
+
+header ul li ul li{
+    float: none;
+}
+
+header ul li ul li a{
+    color: white;
+    border: 0px;
+    border: 1px solid rgb(250,250,250, 0.2);
+    font-size: .8em;
+}
+
+header ul li:hover > ul{
+    display: block;
+}
+
+
+.goog-te-gadget {
+    font-size: 0px !important;
+    margin: 5px 0px 0px 0px;
+} 
+
+.goog-te-gadget select{
+    padding: 6px;
+    margin: 0px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0, 0.5);
+    transition: 500ms;
+    background: transparent;
+}
+
+.goog-te-gadget select:focus{
+    outline: none;
+    background: white;
+    color: #1b891b;
+    border: 1px solid #459045;
+}
+
+
+.goog-te-gadget a{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    
+    header ul{
+        padding: 8px 10px;
+    }
+    
+    header ul li a{
+        font-size: .9em;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    
+    header ul li a{
+        font-size: .7em;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    
+    .over-header{
+        font-size: .7em;
+    }
+    
+    .middle-header{
+        padding: 10px 20px;
+    }
+    
+    .middle-header .container .box .box-cont p{
+        font-size: .6em;
+    }
+}
+
+
+@media only screen and (max-width: 770px){
+    
+    header{
+        height: 65px;
+    }
+    
+    .over-header{
+        display: none;
+    }
+    
+    .middle-header{
+        padding: 0px;
+    }
+    
+    .middle-header .none{
+        display: none;
+    }
+
+    .middle-header .container{
+        padding: 0px;
+    }
+    
+    header .menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        cursor: pointer;
+    }
+    
+    header .menu-btn span{
+        display: block;
+        width: 30px;
+        background-color: black;
+        height: 4px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+    
+    header.sticky{
+        position: fixed;
+        top:0;
+        width:100%;
+        z-index: 200;
+        transition: 100ms;
+        background: white;
+    }
+
+    header ul{
+        display: none;
+    }
+    
+    nav{
+        display: block;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        top: 65px;
+        background:white;
+        z-index: 200;
+        transition: 1000ms;
+        transform: scale(1, 0);
+        transform-origin: top;
+    }
+    
+    .showing{
+        transform: scale(1, 1);
+        transition: 500ms;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0px;
+    }
+    
+    nav ul li{
+        margin:0px;
+        border-top: 1px solid rgb(0, 0, 0, 0.1);
+    }
+    
+    nav ul li:first-child{
+        border-top: 0px;
+    }
+    
+    nav ul li a{
+        display: block;
+        padding: 13px 20px;
+        border-right: 0px;
+        font-size: .9em;
+        transition: 500ms;
+        color: black;
+        cursor: pointer;
+        
+        transition: opacity 150ms ease-in-out;
+        opacity: 0;
+    }
+    
+    .showing a{
+        opacity: 1;
+        transition: opacity 100ms ease-in-out 300ms;
+    }
+    
+    nav ul li a:hover{
+        padding-left: 30px;
+        transition: 500ms;
+    }
+    
+    nav ul li ul{
+        padding: 10px 10px 10px 20px;
+        display: none;
+    }
+    
+    nav ul li ul li{
+        border: 0px
+    }
+
+    nav ul li ul li a{
+        border: 0px;
+        font-size: .8em;
+        padding: 8px 20px;
+    }
+    
+    nav ul li:hover > ul{
+        display: block;
+    }
+    
+    header .fa-caret-down{display: none}
+    
+    nav .fa-plus{
+        display: inline; 
+        float: right; 
+        font-size: .9em
+    }
+    
+    
+    
+    .goog-te-gadget {
+        margin: 15px 0px 0px 0px;
+    } 
+}
+
+
+@media only screen and (max-width: 450px){
+    
+    header .menu-btn{
+        right: 15px;
+    }
+    
+    .goog-te-gadget {
+        margin: 0px;
+        position: absolute;
+        top: 16px;
+        right: 60px;
+    } 
+    
+    .goog-te-gadget select{
+        padding: 3px 1px 3px 10px;
+        font-size: 12px;
+    }
+    
+    .middle-header img{
+        width: 130px;
+    }
+}

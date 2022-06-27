@@ -1,0 +1,1 @@
+/usr/local/bin/ea-php73 -q /home/amcorass/public_html/cron.php

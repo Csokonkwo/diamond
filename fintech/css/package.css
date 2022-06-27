@@ -1,0 +1,75 @@
+.package{
+    height: inherit;
+    padding: 40px 60px;
+    background: white;
+    
+}
+
+.package-head{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.package-container{
+    display: flex;
+}
+
+.package-box{
+    flex: 1;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 20px 5px #d6dee0;
+    text-align: center;
+    padding: 30px 10px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+}
+
+.package-sub-head{
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.package-content{
+    font-size: 18px;
+}
+
+.package-content span{
+    display: block;
+}
+
+
+@media only screen and (max-width:750px){
+    .package{
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (max-width:620px){
+    .package{
+        padding: 40px 60px;
+    }
+    
+    .package-container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:450px){
+    
+    .package{
+        padding: 40px 30px;
+    }
+    
+    .package-box{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .package-head{
+        font-size: 22px;
+    }
+}

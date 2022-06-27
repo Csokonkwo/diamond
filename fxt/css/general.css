@@ -1,0 +1,258 @@
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+th, td{
+    height: 40px;
+    border-bottom: 1px solid #acaaaa;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even){background-color: #c5cea3;}
+
+th{background-color: #1b4a40; color: white;}
+
+.service{
+    background: white;
+    padding: 30px 0px 50px 0px;
+}
+
+.service h1{
+    width: 95vw;
+    max-width: 1250px;
+    margin: 20px auto;
+    color: #1b4a40;
+}
+
+.service .container{
+    display: flex;
+    width: 95vw;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.service .box{
+    flex: 1;
+    margin: 10px;
+}
+
+.service .serv{
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    transition-duration: 1000ms;
+    transition-property: all;
+}
+
+.service .serv:hover{
+    background-size: 250%;
+    transition-duration: 1000ms;
+}
+
+.service .s1{background-image: url(../img/service-1.jpg);}
+
+.service .s2{background-image: url(../img/service-2.jpg); }
+
+.service .s3{background-image: url(../img/service-3.jpg); }
+
+
+.service h2{
+    margin: 10px 0px;
+}
+
+.service p{
+    line-height: 1.5;
+}
+
+.service a{
+    display: block;
+    padding: 15px 25px;
+    width: max-content;
+    background: #337d5c;
+    border-radius: 30px;
+    margin: 30px 0px;
+    color: white;
+    transition-duration: 500ms;
+    font-size: 15px;
+}
+
+.service a:hover{
+    background: white;
+    color: #337d5c;
+    border: 1px solid #337d5c;
+}
+
+
+.frequent{
+    display: flex;
+    background-color:#1b4a40;
+    color: white;
+}
+
+.frequent .left{
+    flex: 1;
+}
+
+.frequent .left .inside{
+    width: 85%;
+    margin-left: 10%;
+    margin-bottom: 80px;
+}
+
+.frequent .left h2{
+    color: #c5cea3;
+    margin: 50px 0px 40px 0px;
+}
+
+.frequent .left li{
+    list-style: none;
+}
+
+.frequent .left a{
+    display: block;
+    color: white;
+    padding: 15px;
+    background: #337d5c;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 5px;
+}
+
+.frequent .left a:hover{
+    background: #c5cea3;
+}
+
+.frequent .left p{
+    margin: 10px 0px 10px 30px;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    line-height: 1.5;
+}
+
+.frequent .right{
+    flex: 1;
+    background-image: url(../img/hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#left p {display: none;}
+#left p:first-of-type {display: block;}
+
+.question{
+    background: #c5cea3;
+    min-height: 100px;
+}
+
+.question .container{
+    width: max-content;
+    margin: auto;
+    line-height: 2.0;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.question h1{
+    margin: auto;
+}
+
+.question p{
+    font-size: 25px;
+}
+
+
+
+.stats{
+    padding: 50px 0px 50px 0px;
+}
+
+.stats h1{
+    width: 95vw;
+    max-width: 1250px;
+    margin: 20px auto;
+    font-size: 1.9em;
+}
+
+.stats h1 span{
+    color: #1b4a40;
+}
+
+.stats .container{
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.stats .box{
+    flex: 1;
+    margin: 20px
+}
+
+.stats h4{
+    text-align: center;
+}
+
+@media only screen and (max-width:800px){
+    .service .container{
+        flex-direction: column;
+    }
+    
+    .service .box{
+        margin: 10px 0px;
+    }
+
+    .service a{
+        margin: 30px auto;
+    }
+    .service h2{
+        text-align: center;
+    }
+    
+    .frequent{
+        flex-direction: column;
+    }
+    
+    .frequent .left .inside{
+        width: 90vw;
+        margin: 20px auto 50px auto;
+    }
+    
+    .frequent .left p{
+        margin: 10px 0px 10px 20px;
+    }
+    
+    
+    .question .container{
+        width: 90vw;
+        padding: 20px 0px;
+    }
+
+    .question h1{
+        font-size: 16px;
+    }
+
+    .question p{
+        font-size: 17px;
+    }
+    
+    
+    .stats{
+        padding: 10px 0px 40px 0px;
+    }
+    
+    .stats .container{
+        flex-direction: column;
+    }
+
+    .stats .box{
+        margin: 20px;
+    }
+}

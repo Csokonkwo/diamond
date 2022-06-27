@@ -1,0 +1,300 @@
+.section{
+    padding: 80px 50px;
+}
+
+.center{
+    margin: auto;
+    width: max-content;
+}
+
+.section .btn{
+    margin-left: 0px;
+    padding: 20px 40px;
+}
+
+.section .btn:hover{
+    color: black;
+}
+
+.section .container{
+    display: flex;
+}
+
+.section .box{
+    position: relative;
+    flex: 5;
+    height: 350px;
+    margin: 10px;
+}
+
+.section .box .image{
+    background-image: url(../img/news.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin: 25px 10px 0px 30px;
+    width: 420px;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section .box .beh{
+    background: #e8cecc;
+    height: 394px; 
+    width: 180px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.section .box div{
+    height: 80%;
+}
+
+.section .box p{
+    font-family: 'roboto condensed';
+    line-height: 1.5;
+}
+
+.about{
+    padding-top: 20px;
+}
+
+.about-box{
+    flex: 1;
+}
+
+.about-image{
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    animation:fade;
+}
+
+.about-image[data-scroll="in"]{
+    animation-name:fadeInLeft;
+    animation-duration:2s;
+    animation-iteration-count: 1;
+}
+
+.about-content{
+    margin-left: 10px;
+    line-height: 1.8;
+    text-align: justify;
+    animation-name:fade;
+}
+
+.about-content[data-scroll="in"]{
+    animation-name:fadeInRight;
+    animation-duration:2s;
+    animation-iteration-count:1;
+}
+
+.about-content h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cert img{
+    display: block;
+    width: 95vw;
+    max-width: 500px;
+    margin: auto;
+}
+
+.support .about-image{
+    background-image: url(../img/bg_team.png);
+}
+
+.support a{
+    background: green;
+    padding:10px 20px;
+    border-radius: 20px;
+    color: white;
+    transition: 500ms;
+}
+
+.support a:hover{
+    background: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.about label{
+    font-size: .8em;
+    width: 80%;
+    display: block;
+}
+
+.about label span{
+    float: right;
+}
+
+.about progress{
+    border-radius: 10px;
+    background: blue;
+    height: 10px;
+    width: 80%;
+    display: block;
+}
+
+.about progress::-webkit-progress-bar{
+    border-radius: 10px;
+    background: #3ccb47;
+    height: 10px;
+}
+
+.about progress::-webkit-progress-value{
+    border-radius: 10px;
+    background: #50ef50;
+    height: 10px;
+}
+
+@media only screen and (max-width:780px){
+    
+    .section{
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (max-width:680px){
+    
+    .section{
+        padding-right: 10px;
+    }
+    
+    .section .container{
+        flex-direction: column;
+    }
+    
+    .center{
+        margin: 20px auto;
+        width: inherit;
+        height: 70%;
+        width: 90%;
+        margin-bottom: 40px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    
+    .section .box{
+        height: 380px;
+        width: 100vw;
+        margin: 10px 0px;
+    }
+    
+    .box-2{
+        max-height: 290px;
+        margin-top: 0px;
+    }
+    
+    .section .box .image{
+        margin-top: 20px;
+        width: 90%;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .section p{
+        width: 90%;
+    }
+    
+    .about p{
+        width: 98%;
+    }
+    
+    .about-image{
+        min-height: 400px;
+    }
+    
+    .about-content{
+        margin-left: 0px;
+    }
+}
+
+
+
+.works{
+    width: 100%;
+    background-image: url(../img/hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.works h2{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.works ul{
+    list-style: none;
+}
+
+.works ul li{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    vertical-align: top;
+    position: relative;
+}
+
+.works ul li span{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #00a53f;
+}
+
+.works ul li span::before{
+    content: "";
+    position: absolute;
+    border: 1px solid #00a53f;
+    width: 174px;
+    height: 174px;
+    left: -18px;
+    top: -7px;
+    border-radius: 50%;
+}
+
+.works ul li span small{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background: #00a53f;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.works ul li img{
+    margin: 40px;
+    width: 40px;
+}
+
+@media only screen and (max-width:890px){
+    
+    .works ul{
+        margin: 0px;
+    }
+    
+    .works ul li{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+}

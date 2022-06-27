@@ -1,0 +1,161 @@
+CREATE TABLE users(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(255) NOT NULL,
+    email varchar(255) NOT NULL UNIQUE,
+    password varchar(255) NOT NULL,
+    admin int(11) NOT NULL,
+    firstname varchar(255),
+    lastname varchar(255),
+    gender varchar(255),
+    phone varchar(255),
+    country varchar(255) NOT NULL,
+    referrer_id varchar(255) NOT NULL,
+    wallet_id varchar(755),
+    token varchar(455) NOT NULL,
+    verified tinyint NOT NULL,
+    ban tinyint NOT NULL,
+    settings tinyint,
+    image varchar(755),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE transactionz(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id varchar(255) NOT NULL,
+    amount double NOT NULL,
+    type varchar(255) NOT NULL,
+    status varchar(255) NOT NULL,
+    reference varchar(755) NOT NULL,
+    payment_method varchar(255) NOT NULL,
+    other_ref varchar(255),
+    other_date text,
+    num_of_pay varchar(5),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE news(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(255) NOT NULL,
+    title varchar(255) NOT NULL,
+    body text NOT NULL,
+    image varchar(755) NOT NULL,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE testimonials(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(255) NOT NULL,
+    body text NOT NULL,
+    fullname varchar(100) NOT NULL,
+    city varchar(100) NOT NULL,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE site_info(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    keyAccess text NOT NULL,
+    keyValue text NOT NULL
+);
+
+CREATE TABLE info(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    investors_online varchar(100) NOT NULL,
+    total_investors varchar(100) NOT NULL,
+    total_withdrawals varchar(100) NOT NULL,
+    total_deposits varchar(100) NOT NULL
+);
+
+CREATE TABLE interests(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id varchar(255) NOT NULL,
+    amount double NOT NULL,
+    type varchar(255) NOT NULL,
+    status varchar(255) NOT NULL,
+    reference varchar(755) NOT NULL,
+    payment_method varchar(255) NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE topics(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    description text,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE posts(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(11) NOT NULL,
+    topic_id int(11),
+    title varchar(250) NOT NULL,
+    image varchar(350) NOT NULL,
+    body text,
+    published tinyint NOT NULL,
+    top tinyint NOT NULL,
+    bottom tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE comments(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(250) NOT NULL,
+    email varchar(250) NOT NULL,
+    post_id int(11),
+    comment text,
+    published tinyint NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE address(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id varchar(25) NOT NULL,
+    street varchar(250),
+    city varchar(55),
+    state varchar(55),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE bank_accounts(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id varchar(25) NOT NULL,
+    username varchar(100) NOT NULL,
+	created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE banks(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE transfers(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id varchar(11) NOT NULL,
+    pin varchar(250),
+    token varchar(11),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE shares(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id int(11) NOT NULL,
+    amount double NOT NULL,
+    price double NOT NULL,
+    quantity double NOT NULL,
+    type varchar(10) NOT NULL,
+    status varchar(20) NOT NULL,
+    payment_method varchar(20),
+reference varchar(100),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE shares_info(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    bankName varchar(50) NOT NULL,
+    bankAccountName varchar(50) NOT NULL,
+    bankAccount varchar(50) NOT NULL,
+    price double NOT NULL
+);

@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+body{
+    background:white;
+    color: rgb(21, 34, 56);
+    box-sizing: border-box;
+    background: #f6f6f6;
+}
+
+html{
+    font-family:sans-serif;
+    overflow-x: hidden;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+   font-family: sans-serif;
+    color: black;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background: white;
+    color: rgb(21, 34, 56);
+    position: fixed;
+    height: 80px;
+    transition: 1000ms;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 2px 5px 1px gray;
+    padding-top: 0px;
+}
+.all{
+    margin-top: 80px;
+}
+
+header .username{
+    display: block;
+    padding: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+header li{
+    list-style: none;
+}
+
+.logo{
+    position: absolute;
+    left: 5px;
+    top: 20px;
+}
+
+.logout{
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    padding: 10px;
+}
+
+.aside{
+    height:600px ;
+    background: white;
+    width: 25%;
+    float: left;
+    position: fixed;
+    color: black;
+    box-shadow: 1px 0px 2px 0px gray;
+}
+
+.aside ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.aside ul li{
+    list-style: none;
+    height: 45px;
+    background: white;
+    color: black;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.aside ul li a{
+    display: block;
+    width: 90%;
+    padding: 6%;
+    color: black;
+}
+
+.aside ul li a:hover{
+    background: green;
+    padding-left: 10%;
+}
+
+.aside label{
+    display: none;
+}
+
+
+@media only screen and (max-width:900px){
+    
+    .aside{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    
+    .all{
+        margin-top: 95px;
+    }
+    
+    header .username{
+        position: absolute;
+        left: 70px;
+        top: 15px;
+        font-size: 1em;
+        margin: 0px;
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .aside{
+        position: fixed;
+        width: 60%;;
+        height: max-content;
+        min-height: 100%;
+        overflow:hidden;
+        transition: 500ms;
+        left: -450px;
+        top: 0px;
+        z-index: 888;
+        box-shadow: none;
+    }
+    
+    .aside ul li{
+        list-style: none;
+        height: 45px;
+        border-bottom: 0px;
+    }
+
+    .aside ul li a:hover{
+        background: lightblue;
+    }
+    
+    .showing{
+        left:0px;
+        transition: 500ms;
+    }
+    
+    .aside label{
+        display: block;
+        height: 45px;
+        margin: 0px;
+        padding: 20px 10px;
+        background: white;
+        color:  rgb(21, 34, 56);
+        border-bottom: 1px solid #9d9d9d
+    }
+    
+    .aside label span{
+        float: right;
+        margin-right: 20px;
+    }
+    
+    header .menu-btn{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        z-index: 5;
+    }
+    
+    header .menu-btn span{
+        display: block;
+        width: 35px;
+        background-color: rgb(21, 34, 56);
+        height: 5px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+}
+
+@media only screen and (max-width:450px){
+    
+    .showing{
+        left:0px;
+    }
+
+}
+
+@media only screen and (max-width:400px){
+    
+    .aside{
+        width: 70%;
+    }
+
+    aside ul li a{
+        font-size: .8em;
+    }
+    
+    .logout{
+        top: 15px;
+    }
+    
+    header{
+        height: 70px;
+    }
+    
+    .all{
+        margin-top: 75px;
+    }
+    
+    header .menu-btn span{
+        width: 25px;
+        height: 4px;
+        margin: 4px 0px;
+    }
+    
+    header .menu-btn{
+        top: 15px;
+    }
+
+
+}

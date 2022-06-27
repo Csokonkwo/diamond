@@ -1,0 +1,297 @@
+.under-header{
+    display: block;
+    height: 85px;
+}
+
+.alert{
+    height: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.alert-success{
+    background-color: green;
+}
+
+.alert-danger{
+    background-color: red;
+}
+
+.alpha{
+    margin: 5px 0px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.content{
+    width: 90%;
+    margin:30px auto 30px;
+}
+
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+}
+
+.content .recent-post-title{
+    margin: 20px;
+}
+
+.content .post{
+    width: 95%;
+    height: 270px;
+    margin:  20px auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    box-shadow: 0px 1px 5px 1px gray;
+}
+
+.post .read-more{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid darkblue;
+    border-radius: 2px;
+    background: transparent;
+    color: darkblue;
+    padding: 5px;
+}
+
+.post .read-more:hover{
+    background: darkblue;
+    color: white;
+    transition: .25s;
+}
+
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .post .post-preview{
+    padding: 10px;
+    width: 60%;
+    float: right;
+}
+
+.content .sidebar .section{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px
+}
+
+.content .section.search{
+    margin-top: 70px;
+}
+
+.text-input{
+    padding: .7rem 1rem ;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color: green;
+    line-height: 1.5rem;
+    font-family: 'lora', serif;
+    border: 1px solid lightgreen;
+    font-size: 1.2em;
+}
+
+.section.topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid gray;
+}
+
+.section.topics ul li a{
+    border-bottom: 1px solid gray;
+    display: block;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.3s;
+}
+
+.section.topics ul li a:hover{
+    padding-left: 10px;
+    transition: all 0.3s
+}
+
+.section-title{
+    margin: 10px 0px ;
+}
+
+/*----- For single post page-----*/
+
+.content .main-content.single{
+    background: white;
+    padding: 20px 50px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 1px gray;
+}
+
+.sidebar.single{ 
+    padding: 0px 10px;
+}
+
+.main-content.single .post-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.popular .post{
+    border-top: 1px solid green;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: inherit;
+    border-radius: 0px;
+}
+
+.popular .post img{
+    height: 60px;
+    width: 75px;
+    float: left;
+    margin-right: 10px;
+}
+
+.single-image{
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:950px){
+    .content{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 810px){
+    .content .main-content{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .content .sidebar{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .content .section.search{
+        margin-top: 30px;
+    }
+    
+    .content .post{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .main-content-wrapper{
+        padding: 10px;
+    }
+    
+    .content .main-content.single{
+        padding: 10px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    
+    .content .post{
+        height: auto;
+    }
+    
+   .content .main-content .post .post-image{
+        width: 20%;
+        height:20%;
+    }
+    
+    .content .post .post-preview{
+        width: 80%;
+    }
+
+    h1.h1-small{
+        font-size: 20px;
+        margin-left: 0px;
+        margin-top: 2px;
+    }
+
+    .content .post .post-preview{
+        padding: 0px 5px;
+    }
+
+    .preview-text{
+        margin: 5px auto;
+    }
+    
+    .post .read-more{
+        padding: .3rem .5rem;
+        bottom: 5px;
+        right: 5px;
+        display: none;
+        /*position: static;
+        width: 100%;
+        display: block;
+        text-align: center;*/
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .content .post{
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+   .content .main-content .post .post-image{
+        width: 100%;
+        height:250px;
+        display: none;
+    }
+    
+    .content .post .post-preview{
+        width: 100%;
+    }
+
+    .h1-small{
+        font-size: 18px;
+        margin-left: inherit;
+        margin-top: 5px;
+    }
+
+    .content .post .post-preview{
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+    .preview-text{
+        margin: 5px auto;
+        font-size: .9em;
+    }
+    
+    .post .read-more{
+        padding: .5rem 1rem;
+    }
+
+    .alpha{
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-top: 1px;
+    }
+
+    .post-preview i{
+        font-size: .8em;
+    }
+}

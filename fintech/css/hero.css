@@ -1,0 +1,109 @@
+.hero{
+    width: 100%;
+    height: 650px;
+    display:block;
+    background-color: ;
+    box-shadow:0px 10px 10px 5px rgb(0,0,0,0.3);
+    position: relative;
+}
+
+.slider { 
+    position:relative; 
+    height: 660px;
+    width:100%; 
+    overflow-x:hidden;
+    top: -10px;
+}
+
+.slider img { 
+    position:absolute; 
+    left:0; 
+    top:0;
+    right: 0;
+    width: 100vw;
+    height: 660px;
+}
+
+.hero-container{ 
+    height: inherit;
+    position: absolute;
+    bottom: 60px;
+    left: 10vw;
+    text-align: left;
+    height: 300px;
+    width: 600px;
+    color: white;
+}
+
+.hero-big-head{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.hero-head{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    display:block;
+    font-family:'lora', serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.hero-head span{
+    display: inline-block;
+    animation: let-the-world 5s linear;
+}
+
+@keyframes let-the-world {
+    
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(5px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+       
+}
+
+/*--------------- Responsive --------------*/
+
+@media only screen and (max-width:700px){
+    .hero-container{ 
+        bottom: 90px;
+        left: 10vw;
+        width: 380px;
+        color: white;
+    }
+    
+}
+
+@media only screen and (max-width:450px){
+    
+    .hero{
+        height: 550px;    
+    }
+    
+    .slider img{
+        height: 561px;
+    }
+    
+    .hero-container{
+        bottom: 100px;
+        width: 80vw;
+        left: 7vw;
+    } 
+    
+    .hero-head{
+        font-size: 18px;
+    }
+    
+    .logo{
+        font-size: 30px;
+    }
+}

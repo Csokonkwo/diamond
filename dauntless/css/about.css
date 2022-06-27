@@ -1,0 +1,132 @@
+#about{
+    background-color: white;
+    padding: 10px;
+}
+
+.about{
+    display:flex;
+    font-family: 'Noto Sans', sans-serif;
+    padding:0;
+}
+
+.about-image{
+    animation:fade;
+    margin-right:20px;
+    width:40%;
+    height:100%;
+}
+
+.about-image[data-scroll="in"]{
+    animation-name:fadeInRight;
+    animation-duration:2s;
+    animation-iteration-count: 1;
+}
+
+.about-image-content{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 6px;
+    margin-right: 50px;
+    height: 100%;
+    filter: brightness(80%)
+}
+
+.aboutleft{
+    line-height:3;
+    width: 55%;
+    margin-bottom: 110px;
+    transition:0.9s;
+    animation-name:fade;
+}
+
+.aboutleft[data-scroll="in"]{
+    animation-name:fadeInLeft;
+    animation-duration:2s;
+    animation-iteration-count:1;
+}
+
+.aboutleft a{
+    color:green;
+    text-decoration: none;
+}
+
+.about-head{
+    margin-top: 20px;
+    margin-left: 35%;
+    color: green;
+    text-align:left;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    width: 150px
+}
+
+.about-head::after{
+    content: "";
+    background-color: green;
+    width:70%;
+    height: 5px;
+    position: absolute;
+    bottom: 21px;
+    left: 0px;
+    border-radius: 5px;
+}
+
+.about-content{
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align:justify;
+    font-size: 17px;
+    font-weight: ;
+    margin-right: 80px;
+    line-height: 2;
+}
+
+
+/*------------- responsive -----------*/
+
+
+@media only screen and (max-width:950px){
+    
+    .about{
+        display:block;
+    }
+    
+    .aboutleft{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    
+     .about-content{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .about-image{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .about-image-content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    
+}
+
+@media only screen and (max-width:420px){
+    
+    .about-head{
+        margin-top: 0px;
+        margin-left: 25%;
+        font-size: 25px;
+    }
+    
+    .about-head::after{
+        width:65%;
+        height: 4px;
+        bottom: 20px;
+    }
+}

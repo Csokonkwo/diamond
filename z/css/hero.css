@@ -1,0 +1,132 @@
+.hero{
+    position: relative;
+    background-color: white;
+}
+
+.hero .container{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.hero .container .box{
+    background: white;
+    display: inline-block;
+    width: 350px;
+    height: 550px;
+    margin: 0px;
+}
+
+.hero .container .box .image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.hero .container .box.one .image{background-image: url(../img/hero_1.jpg);}
+
+.hero .container .box.two .image{background-image: url(../img/hero_2.jpg);}
+
+.hero .container .box.three .image{background-image: url(../img/hero_3.jpg);}
+
+.hero .container .box.four .image{background-image: url(../img/hero_4.jpg);}
+
+.hero .container .box .content{
+    color: white;
+    position: absolute;
+    padding: 200px 70px;
+    top: 20px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.hero .container .box .content a{
+    background-color: #c19740;
+    width: max-content;
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    border-radius: 3px;
+    font-size: .9em;
+}
+
+.hero .container .box .content span{
+    color: #c19740;
+}
+
+.nnext{
+    position: absolute;
+    top: 48.5%;
+    right: 40px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 88;
+}
+
+.pprev{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 88;
+}
+
+
+@media only screen and (max-width:850px){
+    .hero .container .box .content{
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .hero .container .box .content{
+        max-width: 500px;
+    }
+    .nnext{
+        right: 20px;
+    }
+
+    .pprev{
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    
+    .hero .container{
+        height: 530px;
+        padding: 0px;
+    }
+
+    .hero .container .box{
+        background: #303b4a;
+        height: 520px;
+    }
+    
+    .hero .container .box .content{
+        position: static;
+        padding: 10px 15px;
+        width: 100%;
+        height: 260px;
+    }
+    
+    .hero .container .box .image{
+        height: 250px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-position: top;
+    }
+    
+    .nnext{
+        top: 210px;
+    }
+
+    .pprev{
+        top: 210px;
+    }
+}

@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html, 
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'lora', sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn a{
+    border: 1px solid #5e94eb;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: .8em
+}
+
+.btn-big{
+    display: block;
+    width: max-content;
+    background: #5e94eb;
+    padding: 10px 40px;
+    margin-top: 30px;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    transition: 500ms;
+}
+
+.btn-big:hover{
+    padding: 12px 49px;
+    font-size: 1.1em;
+    transition: 500ms;
+}
+
+.signup a{background: #5e94eb;}
+
+header{
+    position: relative;
+    top: 0px;
+    height: 70px;
+    transition: 1000ms;
+    z-index: 100;
+    color: black;
+    background: white;
+    box-shadow: 1px 1px 6px 1px gray;
+    
+}
+
+.logo{
+    display: block;
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 1.6em;
+}
+
+header ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    position: absolute;
+    right: 80px;
+    top: 0px;
+}
+
+header ul li{
+    float: right;
+    display: block;  
+}
+
+header ul li a{
+    display:  block;
+    height: 100%;
+    padding: 25px 20px;
+    transition: 500ms;
+}
+
+header ul li a:hover{
+    background: #5e94eb;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 500ms;
+}
+
+header .menu-btn{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+    width: max-content;
+}
+
+header .menu-btn span{
+    display: block;
+    width: 32px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    transition:0.5s;
+}
+
+.container{
+    display: flex;
+    min-height: 500px;
+    padding: 50px 50px;
+    
+}
+
+.loader {
+    border: 15px solid #f3f3f3; /* Light grey */
+    border-top: 15px solid #5e94eb; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h1,
+h2,{
+    display: block;
+    max-width: 90%;
+}
+
+.content{
+    flex: 5;
+}
+
+.image{
+    flex: 5;
+}
+
+.image img{
+    height: 80%;
+    width: 90%;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 10px;
+    line-height: 1.3;
+}
+
+footer img{
+    height: 16px;
+    display: inline-block;
+}
+
+@media only screen and (max-width:700px){
+    
+    .container{
+        flex-direction: column;
+        padding: 20px 40px 40px 40px;
+    }
+    
+    .image img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    
+    .logo{
+        font-size: 1.1em;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    header ul{
+        right: 55px;
+    }
+    
+    header ul li a{
+        padding: 26px 10px;
+        font-size: .9em
+    }
+
+    header ul li a:hover{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header .menu-btn{
+        right: 10px;
+        top: 20px;
+        font-size: 1.9em;
+        width: max-content;
+    }
+
+    header .menu-btn span{
+        width: 28px;
+    }
+    
+    .btn a{
+        padding: 8px 18px;
+        border-radius: 3px;
+        font-size: .8em
+    }
+
+   
+@media only screen and (max-width:400px){
+    
+    .logo{
+        font-size: 1.0em;
+    }
+    
+    header ul{
+        right: 50px;
+    }
+    
+    header ul li a{
+        padding: 26px 5px;
+        font-size: .7em
+    }
+
+    header ul li a:hover{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .btn a{
+        padding: 8px 15px;
+        font-size: .7em
+    }
+    
+    h1{
+        font-size: 1.6em;
+    }
+    
+    h2{
+        font-size: 1.4em;
+        margin: 0px;
+    }
+}   

@@ -1,0 +1,198 @@
+#hero{
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: 550px;
+    background-color: white;
+    padding: 0;
+    overflow: visible;
+  }
+  .hero i{
+      color:white;
+      font-size:40px;
+      z-index:40;
+      cursor: pointer;
+  }
+  .hero i:nth-of-type(1){
+      position: absolute;
+      left:30px;
+      top:40%;
+  }
+  .hero i:nth-of-type(2){
+      position: absolute;
+      right:30px;
+      top:40%;
+  }
+  
+  .hero-slider-holder{
+      display:flex;
+      width:max-content;
+      height:100%;
+      overflow: scroll;
+      transition: 0.9s;
+  flex-direction: row;
+  
+  }
+  .hero-container {
+    width: 100vw;
+    height: 100%;
+  
+    background-size:cover;
+    color: white;
+   position: static;
+  display: inline-block;
+  }
+  
+  .hero-active{
+  left:0;
+  }
+  .hero-container .content-wrapper {
+    position: relative;
+    top: 25%;
+    padding: 20px;
+    margin-left:10%;
+   
+  }
+  .hero-container .top-tag {
+    text-transform: uppercase;
+    font-size: 17px;
+    animation: none;
+  }
+  .another .hero-container .top-tag{
+    animation: fadeInDown 1s linear 1;
+    overflow: hidden;
+  
+  }
+  .hero-container h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .another .hero-container h2{
+    animation: fadeInUp 1s linear 1;
+  }
+  .hero-container span {
+    color: #daa106;
+  }
+  .hero-container .tagline {
+    margin-top: 40px;
+    animation:none;
+  }
+  .another .hero-container .tagline{
+  
+    animation: slideInUp 1s linear 1;
+  }
+
+
+
+.hero-other{
+    background-image: url(../img/hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+}
+
+.hero-other h1{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 90px;
+}
+
+@media only screen and (max-width:700px){
+    .hero-other h1{
+        left: 40px;
+    }
+}
+
+
+
+.calculator{
+    width:100%;
+    display: flex;
+
+}
+.calculator label{
+    display:block;
+    text-align: center;
+    position: static;
+    margin:10px;
+    color:#337d5c;
+}
+.calculator .field{
+    display:inline-block;
+    margin-left:100px;
+    margin-top:10px;
+}
+.calculator .field input,.calculator .field div,.calculator .field select{
+    width: 200px;
+    border-radius:5px;
+    padding:5px 10px 5px 10px;
+    color:white;
+    background-color:#1b4a40;
+ color:white;
+ font-size:14px;
+    border:none;
+    height:30px;
+    position: static;
+    display: inline-block;
+text-transform: capitalize;
+    width:200px;
+
+  
+}
+.calculator .field select{
+    height:40px;
+    width:220px;
+}
+.calculator .field div span{
+    display:block;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width:700px){
+    .calculator{
+      flex-direction:column;
+    }
+
+    .calculator .field{
+        width: max-content;
+        display: block;
+        margin: auto;
+    }
+
+    .hero h2{
+        font-size: 30px;
+    }
+
+    .hero-container .content-wrapper {
+        position: relative;
+        top: 100px;
+        padding: 20px;
+        margin-left:30px;
+       
+      }
+
+    .hero-container .top-tag{
+        font-size: 15px;
+    }
+    
+  .hero i:nth-of-type(1){
+    left:10px;
+    top:200px;
+  }
+  .hero i:nth-of-type(2){
+      right:10px;
+      top:200px;
+  }
+
+  .hero{
+    height: 450px;
+  }
+
+}

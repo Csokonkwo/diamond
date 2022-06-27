@@ -1,0 +1,156 @@
+.package{
+    height: inherit;
+    padding: 40px 60px;
+    background: white;
+    
+}
+
+.package h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.package-container{
+    display: flex;
+    justify-content: center;
+}
+
+.package-box{
+    flex: 1;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 20px 5px #d6dee0;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+}
+
+.package-container h2{
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    padding: 20px 20px;
+    background: #0a385f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+
+.package-container p{
+    border-top: 1px solid #eaeaea;
+    padding: 10px;
+}
+
+.package .checked{
+    color: orange;
+}
+
+.package .wallet{
+    color: #edbd65;
+    font-size:48px;
+}
+
+@media only screen and (max-width:750px){
+    .package{
+        padding: 20px 40px;
+    }
+    
+}
+
+@media only screen and (max-width:700px){
+    .package{
+        padding: 40px 60px;
+    }
+    
+    .package-container{
+        flex-direction: column;
+    }
+    .package h1{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width:450px){
+    
+    .package{
+        padding: 40px 20px;
+    }
+    
+    .package-box{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .package-head{
+        font-size: 20px;
+    }
+}
+
+
+
+
+.calculator{
+    width:100%;
+    display: flex;
+    margin: 0px 0px 40px 0px;
+}
+
+.calculator ::placeholder{
+    color: white;
+}
+
+.calculator label{
+    display:block;
+    text-align: center;
+    position: static;
+    margin:10px;
+    color:black;
+}
+
+.calculator .field{
+    display:inline-block;
+    margin-left:100px;
+    margin-top:10px;
+}
+
+.calculator .field input, .calculator .field div,.calculator .field select{
+    width: 200px;
+    border-radius:5px;
+    padding:5px 10px 5px 10px;
+    color:white;
+    background-color:rgb(0, 0, 0, 0.8);
+    color:white;
+    font-size:14px;
+    border:none;
+    height:30px;
+    position: static;
+    display: inline-block;
+    outline: none;
+}
+
+.calculator .field select{
+    height:30px;
+    width:200px;
+}
+.calculator .field div span{
+    display:block;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width:700px){
+    
+    .calculator{
+      flex-direction:column;
+    }
+
+    .calculator .field{
+        width: max-content;
+        display: block;
+        margin: auto;
+    }
+
+
+}

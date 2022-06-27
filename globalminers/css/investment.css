@@ -1,0 +1,178 @@
+
+.plan{
+    padding: 50px 0px 50px 0px;
+    background: #f5f5f5;
+}
+
+.plan *{
+    color: black;
+    text-align: center;
+}
+
+.plan h1{
+    max-width: 1250px;
+    margin:20px auto;
+    color: #1b4a40;
+}
+
+.plan .container{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.plan .box{
+    background: white;
+    box-shadow: 0px 2px 10px 5px #f5f5f5;
+}
+
+.plan .p1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.plan .p2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.plan .p3{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.plan .p4{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.plan .p5{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.plan .p6{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.plan .box p{
+    padding: 15px 10px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 15px;
+}
+
+.plan .box h3{
+    color: #1b4a40;
+    padding: 20px;
+    background: #c5cea3;
+}
+
+.plan .box h2{
+    color: #1b4a40;
+    padding: 20px;
+    font-size: 2em;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.plan .box a{
+    display: block;
+    width: max-content;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.plan .box a:hover{
+    background: #1b4a40;
+    color: white;
+}
+
+@media only screen and (max-width:800px){
+    
+    .plan .container{
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: auto;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    
+    .plan .p1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .plan .p2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .plan .p3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .plan .p4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .plan .p5{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .plan .p6{
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+@media only screen and (max-width:550px){
+    
+    .plan h1{
+        font-size: 26px;
+    }
+    
+    .plan .container{
+        grid-template-columns: 95vw;
+        grid-template-rows: auto;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    
+    .plan .p1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .plan .p2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .plan .p3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .plan .p4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .plan .p5{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .plan .p6{
+        grid-column: 1;
+        grid-row: 6;
+    }
+}

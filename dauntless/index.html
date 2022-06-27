@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dauntless</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/news-letter.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div class="body-contact">
+        <label id="con-bar" class="con-bar" onclick="con()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </label>
+        <div id="con">
+        <a href="https://twitter.com/csotech">
+            <i class="fab foo fa-twitter"></i>
+        </a>
+        <a href="https://wa.me/+2348065619176">
+            <i class="fab foo fa-whatsapp"></i>
+        </a>      
+        <a href="#">
+            <i class="fab foo fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-facebook"></i>
+        </a>
+        </div>
+    </div>
+    
+    <header id="header" class="header">        
+        <div class="logo"> Dauntless</div>
+          
+            <label id="res-bar" class="res-bar" onclick="responsiveBar()">
+                <span id="activo1"></span>
+                <span></span>
+                <span></span>
+            
+            </label>
+        
+           <!-- <label><i class='fa fa-search'></i></label> -->
+        </header>
+        
+        <nav id="navbar">
+                    
+                <ul id="navli">
+                    <li><a href="#">Home </a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li class="li-phone"><i class='fas fa-phone-alt'></i> +234 814 355 5785</li>
+                    
+            
+                </ul>
+            </nav>
+    
+    <!---------------- Hero section------->
+    
+    <div class="under-header"></div>
+    
+    <section class="hero">
+        <slider>
+            <slide>
+                <div class="hero-head">Weddings</div>
+                <div class="hero-content">
+                There is so much fun in weddings bla bla bla</div>
+                <div class="hero-link">
+                <a href="#"> More info</a>
+                </div>
+            </slide>
+            
+            <slide>
+                <div class="hero-head">Birthdays</div>
+                <div class="hero-content">
+                There is so much fun in weddings bla bla bla</div>
+                <div class="hero-link">
+                <a href="#"> More info</a>
+                </div>
+            </slide>
+            
+            <slide>
+                <div class="hero-head">Book launch</div>
+                <div class="hero-content">
+                There is so much fun in weddings bla bla bla</div>
+                <div class="hero-link">
+                <a href="#"> More info</a>
+                </div>
+            </slide>
+            
+            <slide>
+                <div class="hero-head">Other events</div>
+                <div class="hero-content">
+                There is so much fun in weddings bla bla bla</div>
+                <div class="hero-link">
+                <a href="#"> More info</a>
+                </div>
+            </slide>
+        </slider>
+
+    </section>
+    
+    
+    <!---------------- order section ---------->
+    
+    <section class="order">
+        
+        <form>
+            <label for="username">
+                What event do you have?
+            </label>
+            <input type="text" name="username" id="username" placeholder="Your Name" required>
+            <input type="text" placeholder="Date" name="event_date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+            <select name="event_type" required>
+                <option>Event type</option>
+                <option>Birthday</option>
+                <option>Wedding</option>
+                <option>Book launch</option>
+                <option>Others</option>
+            </select>
+            <button type="submit" name="event_reg">
+            Submit
+            </button>
+        </form> 
+        
+        <br>
+    </section>
+    
+    
+     <!---------------- Services  section -------->
+    
+    <section class="services">
+        <div class="services-head">Services we offer</div>
+        <div class="services-container">
+            <div class="service-box sb-1"> 
+                <div class="service-head"> Events</div>
+                <div class="service-content">
+                     We run services during our birthday services, when you invuite us to usher we go craze for you like say tomorrow no day omo no reason us oh. i swear down.
+                </div>
+            </div>
+            
+            <div class="service-box sb-2">
+                <div class="service-head">Cattering</div>
+                <div class="service-content">
+                     We run services during our wedding services, when you invuite us to usher we go craze for you like say tomorrow no day omo no reason us oh. i swear down.
+                </div>
+            </div>
+            
+            <div class="service-box sb-3"> 
+                <div class="service-head">Venues </div>
+                <div class="service-content">
+                     We run services during our birthday services, when you invuite us to usher we go craze for you like say tomorrow no day omo no reason us oh. i swear down.
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    <!------------- Portfolio -------------->
+    
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-head"> Recent places we served</div>
+        <div class="portfolio-container">
+            <div class="portfolio-box pb-1"><div class="portfolio-content">Abuja</div></div>
+            
+            <div class="portfolio-box pb-2"><div class="portfolio-content">bornu</div></div>
+            
+            <div class="portfolio-box pb-3"><div class="portfolio-content">sokoto</div></div>
+            
+            <div class="portfolio-box pb-4"><div class="portfolio-content">kano</div></div>
+            
+            <div class="portfolio-box pb-5"><div class="portfolio-content">katsina</div></div>
+        </div>
+        
+    </section>
+    
+    
+    <!---------------- News letter section ---------->
+    
+    <section class="news-letter">
+        
+        <form>
+            <label for="email">
+                Subscribe to our newsletter to get offers and about new offers.
+            </label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            
+            <button type="submit" name="event_reg">
+            Submit
+            </button>
+        </form> 
+        
+        <br>
+    </section>
+    
+    
+    <!----------------- Footer  ------------->
+        
+         <footer>
+       <div class="footer">
+               
+            <div class="footer-content">
+               <div class="footer-content-head" id="contact-link">
+                   Contact us
+               </div>
+               <div class="footer-content-body">
+                   <i class='fas fa-map-marker-alt'></i> Enugu, Nigeria<br>
+                   <i class='fas fa-phone-alt'></i> +234 814 355 5785 <br>
+                   <i class='fas fa-envelope'></i> Support@dauntless.com.ng
+                   
+               </div>
+            </div>
+           
+           <div class="footer-content">
+               <div class="footer-content-head">
+                   Quick links
+               </div>
+               <div class="footer-content-body">
+                   <ul>
+                       <li> <i class='fas fa-home'></i> <a href="#">Home</a></li>
+                       
+                       <li> <i class='fas fa-folder'></i> <a href="#service">Portfolio</a></li>
+                       
+                       <li>  <i class='fas fa-blog'></i> <a href="#contact1">Blog</a></li>
+                   
+                   </ul>
+               </div>
+            </div>
+               
+            <div class="footer-content">   
+               <div class="footer-content-head">
+                  Locations
+               </div>
+                <div class="footer-content-body">
+                   <ul>
+                       <li> <i class='fas fa-map-marker-alt'></i> Enugu, Nigeria<br> </li>
+                       
+                       <li> <i class='fas fa-map-marker-alt'></i> Awka, Nigeria<br> </li>
+                       
+                        <li> <i class='fas fa-map-marker-alt'></i> Owerri, Nigeria<br> </li>
+                   
+                   </ul>
+               </div>
+        </div>
+       </div>
+       
+        
+       <div class="main-footer">
+        &copy; 2020 Dauntless, All rights reserved. Designed by <a href="https://csotech.com.ng"> <img src="cso.png" height="16px"></a>  
+       </div>
+    </footer>
+       
+
+    
+    
+    <script src="js/responsive.js"></script>
+</body>
+</html>

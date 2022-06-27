@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, 
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'lora', serif;
+    scroll-behavior: smooth;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+   font-family: 'candal', serif;
+    color: black;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: #040129;
+    border-radius: .25rem;
+    border: 1px solid #040129;
+}
+
+.btn-big{
+    padding: .8rem 1.9rem;
+    line-height: 1.3rem;
+    color: white;
+    border-radius: .25rem;
+    display: inline-block;
+    background-color: #040129;
+    border-radius: 25px;
+}
+
+.btn:hover{
+    color: white;
+    background-color:#040129;
+}
+
+.btn-big:hover{
+    color: white;
+    background-color:#0c056a;
+}
+
+
+.text-input{
+    padding: .7rem 1rem ;
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    line-height: 1.5rem;
+    font-family: 'lora', serif;
+    font-size: 1.2em;
+}
+
+.under-header{
+    height: 80px;
+}
+
+header{
+    background: white;
+    color: rgb(21, 34, 56);
+    position: absolute;
+    height: 80px;
+    transition: 1000ms;
+    z-index: 100;
+    width: 100%;
+}
+
+header *{
+    color: rgb(21, 34, 56);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+    transition: 1000ms;
+}
+
+label .fa-user{
+    display: none;
+}
+
+.logo{
+    float: left;
+    margin-left: 2em;
+}
+
+.logo-text{
+    margin: 8px;
+    font-family: 'candal', serif;
+}
+
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 12px;
+    padding-top: 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    height: 70px
+}
+
+header ul li a:hover{
+    background: green;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+header .menu-btn{
+    display: none;
+}
+
+
+@media only screen and (max-width:760px){
+    
+    header{
+        
+    }
+    
+    label .fa-user{
+        display: block;
+        position: absolute;
+        right: 57px;
+        top: 22px;
+        font-size: 25px;
+    }
+    
+    header .logo{
+        margin-left: .8em;
+    }
+
+    header .logo-text{
+        font-size: 1.9em;
+    }
+    
+    header ul{
+        width: 100%;
+        background: white;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 500ms;
+        position: absolute;
+        top: 70px;
+        z-index: 20;
+    }
+    
+    .showing{
+        max-height: 100em;
+        transition: 1000ms;
+    }
+    
+    #home{
+        border-top: 2px solid green;  
+    }
+    
+    header ul li{
+        width: 100%;
+    }
+    
+    header ul li a{
+        height: 50px;
+        padding-top: 10px;
+    }
+    
+    header .menu-btn{
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 18px;
+        font-size: 1.9em;
+    }
+    
+    header .menu-btn span{
+        display: block;
+        width: 35px;
+        background-color: rgb(21, 34, 56);
+        height: 5px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+}

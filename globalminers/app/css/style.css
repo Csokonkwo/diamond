@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin:0;
+    appearance:none;
+    font-family : "Roboto Condensed";
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+    scroll-behavior: smooth; 
+}
+
+body{
+    margin: auto;
+    padding: 0px;
+    font-family: sans-serif;
+    width:100%;
+    overflow:hidden;
+    background-color:#19222a;
+    color: #999;
+}
+
+a{
+    text-decoration: none;
+    color: #999;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+th, td{
+    height: 40px;
+    border-bottom: 1px solid #acaaaa;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even){background-color: #daa106;}
+
+th{background-color: #0c1f38; color: white;}
+
+
+/*.wrapper{
+    border: 4px solid #f68c1f;
+    height: 100%;
+    width: 100%;
+    position: fixed
+}*/
+
+header{
+    background: #2b3138;
+    border-bottom: 1px solid #19222a;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+header img{
+    width: 150px;
+}
+
+header i{
+    float: right;
+    margin: 20px 90px 20px 20px;
+}
+
+aside{
+    width: 20%;
+    background: #2b3138;
+    height: 700px;
+    min-height: 100%;
+    position: fixed;
+    top: 65px;
+}
+
+aside ul i{
+    color: #daa106;
+    margin-right: 8px;
+}
+
+aside .aside-header{
+    display: flex;
+    padding: 25px 20px;
+    
+}
+
+aside .aside-header img{
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+aside .aside-header p{
+    font-size: 1em;
+}
+
+aside .aside-header p span{
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: #777;
+    transition: 500ms;
+}
+
+aside ul li a:hover{
+    background: #4e2b07;
+    color: white;
+}
+
+@media only screen and (max-width:1000px){
+    aside{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:750px){
+    
+    .menu-btn{
+        position: absolute;
+        right: 35px;
+        top: 10px;
+        text-align: center;
+    }
+
+    .menu-btn span{
+        display: block;
+        width: 35px;
+        background-color: white;
+        height: 5px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+    
+    aside{
+        width: 80%;
+        left: -700px;
+        z-index: 120;
+        transition: 500ms;
+        top: 0px;
+        height: 100vh;
+        z-index: 300;
+    }
+    
+    .showing{
+        left: 0px;
+        transition: 500ms;
+    }
+}
+
